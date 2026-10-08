@@ -1,0 +1,727 @@
+# Spanish translations for contabai-theme package.
+# Copyright (C) 2026 THE contabai-theme'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the contabai-theme package.
+# Contabai, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: contabai-theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-17 19:20+0200\n"
+"PO-Revision-Date: 2026-07-17 19:22+0200\n"
+"Last-Translator: Contabai\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "100% width"
+msgstr "100 % de ancho"
+
+msgid "404 Oops"
+msgstr "404 Vaya"
+
+msgid ""
+"A fresh pick of homes and villas from across the catalogue — every one "
+"booked direct with the host."
+msgstr ""
+"Una selección fresca de casas y villas de todo el catálogo, cada una "
+"reservada directamente con el anfitrión."
+
+msgid "Advanced"
+msgstr "Avanzado"
+
+msgid ""
+"Agree the price and pay the host directly — we never touch the money or step "
+"into your booking."
+msgstr ""
+"Acuerda el precio y paga directamente al anfitrión: nosotros no tocamos el "
+"dinero ni intervenimos en tu reserva."
+
+msgid "All destinations"
+msgstr "Todos los destinos"
+
+msgid "Always"
+msgstr "Siempre"
+
+msgid "Angled soft"
+msgstr "Angular suave"
+
+msgid ""
+"Are you a host somewhere else? Tell us where you host and we’ll bring direct "
+"booking to your corner of the world."
+msgstr ""
+"¿Eres anfitrión en otro lugar? Dinos dónde alojas y llevaremos la reserva "
+"directa a tu rincón del mundo."
+
+msgid "Area"
+msgstr "Zona"
+
+msgid "Aruba"
+msgstr "Aruba"
+
+msgid ""
+"Ask anything and agree the details straight with the owner — real answers "
+"from the person who knows the place best."
+msgstr ""
+"Pregunta lo que quieras y acuerda los detalles directamente con el "
+"propietario: respuestas reales de quien mejor conoce el alojamiento."
+
+msgid "Auto"
+msgstr "Automático"
+
+msgid "Back to home"
+msgstr "Volver al inicio"
+
+msgid "Background"
+msgstr "Fondo"
+
+msgid "Background animation"
+msgstr "Animación de fondo"
+
+msgid "Badge 1 icon"
+msgstr "Icono de insignia 1"
+
+msgid "Badge 1 icon color"
+msgstr "Color del icono de insignia 1"
+
+msgid "Badge 1 text"
+msgstr "Texto de insignia 1"
+
+msgid "Badge 2 icon"
+msgstr "Icono de insignia 2"
+
+msgid "Badge 2 icon color"
+msgstr "Color del icono de insignia 2"
+
+msgid "Badge 2 text"
+msgstr "Texto de insignia 2"
+
+msgid "Badge 3 icon"
+msgstr "Icono de insignia 3"
+
+msgid "Badge 3 icon color"
+msgstr "Color del icono de insignia 3"
+
+msgid "Badge 3 text"
+msgstr "Texto de insignia 3"
+
+msgid "Base font size"
+msgstr "Tamaño de fuente base"
+
+msgid "Become a host"
+msgstr "Hazte anfitrión"
+
+msgid "Body font"
+msgstr "Fuente del cuerpo"
+
+msgid "Body text color"
+msgstr "Color del texto"
+
+msgid "Bold"
+msgstr "Negrita"
+
+msgid ""
+"Bold, italic and links are kept; the top bar is a single line, so paragraphs "
+"and lists are not."
+msgstr ""
+"Se mantienen la negrita, la cursiva y los enlaces; la barra superior es de "
+"una sola línea, así que los párrafos y las listas no."
+
+msgid "Bonaire"
+msgstr "Bonaire"
+
+msgid "Book direct"
+msgstr "Reserva directa"
+
+msgid "Book in three steps"
+msgstr "Reserva en tres pasos"
+
+msgid "Bottom center"
+msgstr "Centro inferior"
+
+msgid "Bottom left"
+msgstr "Abajo a la izquierda"
+
+msgid "Bottom right"
+msgstr "Abajo a la derecha"
+
+msgid "Bottom to top"
+msgstr "De abajo arriba"
+
+msgid "Branding"
+msgstr "Marca"
+
+msgid "Breadcrumbs"
+msgstr "Migas de pan"
+
+msgid "Breathe"
+msgstr "Respiración"
+
+msgid "Browse all listings"
+msgstr "Ver todos los alojamientos"
+
+msgid "Built to cut out the middleman"
+msgstr "Creada para eliminar al intermediario"
+
+msgid "CTA URL"
+msgstr "URL del CTA"
+
+msgid "CTA label"
+msgstr "Etiqueta del CTA"
+
+msgid "Call-to-action button"
+msgstr "Botón de llamada a la acción"
+
+msgid "Center"
+msgstr "Centro"
+
+msgid "Chats"
+msgstr "Chats"
+
+msgid "Choose file"
+msgstr "Elegir archivo"
+
+msgid "City"
+msgstr "Ciudad"
+
+msgid "Classic editor"
+msgstr "Editor clásico"
+
+msgid "Close"
+msgstr "Cerrar"
+
+msgid "Color"
+msgstr "Color"
+
+msgid "Column %d icon"
+msgstr "Icono de la columna %d"
+
+msgid "Column %d icon color"
+msgstr "Color del icono de la columna %d"
+
+msgid "Column %d text"
+msgstr "Texto de la columna %d"
+
+msgid "Column %d title"
+msgstr "Título de la columna %d"
+
+msgid "Contabai Theme"
+msgstr "Contabai Theme"
+
+msgid "Contain"
+msgstr "Contener"
+
+msgid "Content opacity"
+msgstr "Opacidad del contenido"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Cover"
+msgstr "Cubrir"
+
+msgid "Crossfade only"
+msgstr "Solo fundido"
+
+msgid "Curaçao"
+msgstr "Curaçao"
+
+msgid "Diagonal"
+msgstr "Diagonal"
+
+msgid "Diagonal drift"
+msgstr "Deriva diagonal"
+
+msgid "Direct contact"
+msgstr "Contacto directo"
+
+msgid "Dual tone"
+msgstr "Dos tonos"
+
+msgid "Enable"
+msgstr "Activar"
+
+msgid "Extra bold"
+msgstr "Extranegrita"
+
+msgid "Eyebrow"
+msgstr "Antetítulo"
+
+msgid "Eyebrow color"
+msgstr "Color del antetítulo"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Fairer prices"
+msgstr "Precios más justos"
+
+msgid "Footer"
+msgstr "Pie de página"
+
+msgid ""
+"From snug studios to grand villas — room for couples, families and groups."
+msgstr ""
+"Desde estudios acogedores hasta grandes villas: espacio para parejas, "
+"familias y grupos."
+
+msgid "Gradient"
+msgstr "Degradado"
+
+msgid "Handpicked"
+msgstr "Selección especial"
+
+msgid "Header navigation"
+msgstr "Navegación de cabecera"
+
+msgid "Heading"
+msgstr "Título"
+
+msgid "Heading color"
+msgstr "Color del título"
+
+msgid "Heading font"
+msgstr "Fuente de títulos"
+
+msgid "Heading line height"
+msgstr "Altura de línea del título"
+
+msgid "Heading weight"
+msgstr "Grosor de título"
+
+msgid "Hero"
+msgstr "Hero"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "Homes and villas from the Dutch Caribbean to the rest of the world."
+msgstr "Casas y villas desde el Caribe neerlandés hasta el resto del mundo."
+
+msgid "Hosts keep more"
+msgstr "Los anfitriones ganan más"
+
+msgid "I would like to host on Mitabon."
+msgstr "Me gustaría ser anfitrión en Mitabon."
+
+msgid "Image"
+msgstr "Imagen"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Ken Burns — zoom in"
+msgstr "Ken Burns — acercar"
+
+msgid "Ken Burns — zoom out"
+msgstr "Ken Burns — alejar"
+
+msgid "Left"
+msgstr "Izquierda"
+
+msgid "Left center"
+msgstr "Centro izquierda"
+
+msgid "Left to right"
+msgstr "De izquierda a derecha"
+
+msgid "Line height"
+msgstr "Altura de línea"
+
+msgid "Link color"
+msgstr "Color de enlace"
+
+msgid "Link underline"
+msgstr "Subrayado de enlace"
+
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+msgid "List it on Mitabon — keep what you earn"
+msgstr "Publícalo en Mitabon y quédate con lo que ganas"
+
+msgid "Medium"
+msgstr "Medio"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Mesh subtle"
+msgstr "Malla sutil"
+
+msgid "Message hosts directly for honest answers and local tips."
+msgstr ""
+"Escribe directamente a los anfitriones para respuestas sinceras y consejos "
+"locales."
+
+msgid "Message the host"
+msgstr "Escribe al anfitrión"
+
+msgid ""
+"Messaging a host and booking need a free, verified account — a quick sign-up "
+"keeps guests and hosts safe."
+msgstr ""
+"Escribir a un anfitrión y reservar requieren una cuenta gratuita y "
+"verificada: un registro rápido protege a huéspedes y anfitriones."
+
+msgid "More of what you pay reaches the person hosting you."
+msgstr "Más de lo que pagas llega a quien te aloja."
+
+msgid "My hub"
+msgstr "Mi panel"
+
+msgid "New destination request"
+msgstr "Nueva solicitud de destino"
+
+msgid "Next"
+msgstr "Siguiente"
+
+msgid "No booking fees"
+msgstr "Sin gastos de reserva"
+
+msgid "No middleman markup baked into the nightly rate."
+msgstr "Sin recargo de intermediarios en el precio por noche."
+
+msgid "No platform commission"
+msgstr "Sin comisión de plataforma"
+
+msgid "No posts found in this category."
+msgstr "No se han encontrado entradas en esta categoría."
+
+msgid "No repeat"
+msgstr "Sin repetición"
+
+msgid "None"
+msgstr "Ninguno"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Not a cent is skimmed off your booking."
+msgstr "No se descuenta ni un céntimo de tu reserva."
+
+msgid "Not on the map yet?"
+msgstr "¿Aún no estás en el mapa?"
+
+msgid "On hover"
+msgstr "Al pasar el ratón"
+
+msgid "Our first islands"
+msgstr "Nuestras primeras islas"
+
+msgid "Overlay color"
+msgstr "Color de superposición"
+
+msgid "Overlay opacity"
+msgstr "Opacidad de superposición"
+
+msgid "Own a place?"
+msgstr "¿Tienes un alojamiento?"
+
+msgid "Page not found."
+msgstr "Página no encontrada."
+
+msgid "Pan down"
+msgstr "Desplazar abajo"
+
+msgid "Pan left"
+msgstr "Desplazar a la izquierda"
+
+msgid "Pan right"
+msgstr "Desplazar a la derecha"
+
+msgid "Pan up"
+msgstr "Desplazar arriba"
+
+msgid "Paragraph spacing"
+msgstr "Espaciado de párrafo"
+
+msgid "Payoff"
+msgstr "Eslogan"
+
+msgid "Position"
+msgstr "Posición"
+
+msgid "Powered by Contabai"
+msgstr "Powered by Contabai"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Privacy"
+msgstr "Privacidad"
+
+msgid "Privacy policy"
+msgstr "Política de privacidad"
+
+msgid "Privacy statement"
+msgstr "Declaración de privacidad"
+
+msgid "Radial"
+msgstr "Radial"
+
+msgid ""
+"Reach travellers worldwide and book them direct. No commission on the stay, "
+"no middleman between you and your guests — you set the price and keep what "
+"you earn."
+msgstr ""
+"Llega a viajeros de todo el mundo y que reserven directamente. Sin comisión "
+"sobre la estancia ni intermediarios entre tú y tus huéspedes: tú pones el "
+"precio y te quedas con lo que ganas."
+
+msgid "Relaxed"
+msgstr "Amplio"
+
+msgid "Remove"
+msgstr "Eliminar"
+
+msgid "Repeat"
+msgstr "Repetir"
+
+msgid "Repeat all"
+msgstr "Repetir todo"
+
+msgid "Repeat horizontal"
+msgstr "Repetir en horizontal"
+
+msgid "Repeat vertical"
+msgstr "Repetir en vertical"
+
+msgid "Right"
+msgstr "Derecha"
+
+msgid "Right center"
+msgstr "Centro derecha"
+
+msgid "Search & discover"
+msgstr "Busca y descubre"
+
+msgid "Semibold"
+msgstr "Seminegrita"
+
+msgid "Settings saved."
+msgstr "Ajustes guardados."
+
+msgid "Show brand text"
+msgstr "Mostrar texto de marca"
+
+msgid "Show hero on homepage"
+msgstr "Mostrar hero en la página de inicio"
+
+msgid "Show top bar"
+msgstr "Mostrar barra superior"
+
+msgid "Showing %1$s to %2$s of %3$s results"
+msgstr "Mostrando %1$s a %2$s de %3$s resultados"
+
+msgid "Shown in a pop-up from the footer link."
+msgstr "Se muestra en una ventana emergente desde el enlace del pie de página."
+
+msgid "Simple by design"
+msgstr "Sencillo por diseño"
+
+msgid "Site name"
+msgstr "Nombre del sitio"
+
+msgid "Size"
+msgstr "Tamaño"
+
+msgid "Socials"
+msgstr "Redes sociales"
+
+msgid "Soft fade"
+msgstr "Desvanecido suave"
+
+msgid "Static (no motion)"
+msgstr "Estático (sin movimiento)"
+
+msgid "Stays for everyone"
+msgstr "Alojamientos para todos"
+
+msgid "Stays worth the trip"
+msgstr "Alojamientos que valen el viaje"
+
+msgid "Sticky header"
+msgstr "Cabecera fija"
+
+msgid "Subheading"
+msgstr "Subtítulo"
+
+msgid "Subheading color"
+msgstr "Color del subtítulo"
+
+msgid "Suggest your destination"
+msgstr "Sugiere tu destino"
+
+msgid ""
+"Tell us where, when and with how many. Filter by type, price and amenities."
+msgstr ""
+"Dinos adónde, cuándo y cuántos sois. Filtra por tipo, precio y servicios."
+
+msgid "Terms"
+msgstr "Términos"
+
+msgid "Terms of service"
+msgstr "Términos del servicio"
+
+msgid "Terms statement"
+msgstr "Términos y condiciones"
+
+msgid "Text alignment"
+msgstr "Alineación del texto"
+
+msgid "Text color"
+msgstr "Color del texto"
+
+msgid ""
+"The big rental platforms take a cut of nearly every booking — often around "
+"15%. That money has to come from somewhere: a higher price for you, and less "
+"for the host who actually welcomes you in."
+msgstr ""
+"Las grandes plataformas de alquiler se llevan una comisión de casi cada "
+"reserva, a menudo alrededor del 15%. Ese dinero sale de algún sitio: un "
+"precio más alto para ti y menos para el anfitrión que de verdad te recibe."
+
+msgid "The price you see is the price you pay — nothing added at checkout."
+msgstr "El precio que ves es el precio que pagas: nada se añade al finalizar."
+
+msgid "Theme color"
+msgstr "Color del tema"
+
+msgid "Three stop"
+msgstr "Tres paradas"
+
+msgid "Tight"
+msgstr "Compacto"
+
+msgid "TikTok"
+msgstr "TikTok"
+
+msgid "Top bar"
+msgstr "Barra superior"
+
+msgid "Top center"
+msgstr "Centro superior"
+
+msgid "Top left"
+msgstr "Arriba a la izquierda"
+
+msgid "Top right"
+msgstr "Arriba a la derecha"
+
+msgid "Top to bottom"
+msgstr "De arriba abajo"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Typography"
+msgstr "Tipografía"
+
+msgid ""
+"We are starting close to home, in the Dutch Caribbean — and rolling out "
+"worldwide from there."
+msgstr ""
+"Empezamos cerca de casa, en el Caribe neerlandés, y desde allí nos "
+"expandimos por todo el mundo."
+
+msgid ""
+"We were tired of watching that. So Mitabon works the other way round — you "
+"book straight with the host, the money never passes through us, and no "
+"platform commission inflates the price. Fair for you, fair for the people "
+"who open their doors."
+msgstr ""
+"Nos cansamos de verlo. Por eso Mitabon funciona al revés: reservas "
+"directamente con el anfitrión, el dinero nunca pasa por nosotros y ninguna "
+"comisión de plataforma infla el precio. Justo para ti, justo para quienes "
+"abren sus puertas."
+
+msgid "Where it all starts"
+msgstr "Donde todo empieza"
+
+msgid "Why Mitabon"
+msgstr "Por qué Mitabon"
+
+msgid "Worldwide selection"
+msgstr "Selección mundial"
+
+msgid "X"
+msgstr "X"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "Updates"
+msgstr "Actualizaciones"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Installed version"
+msgstr "Versión instalada"
+
+msgid "Latest release"
+msgstr "Última versión"
+
+msgid "Update available"
+msgstr "Actualización disponible"
+
+msgid "Last check"
+msgstr "Última comprobación"
+
+msgid "Never"
+msgstr "Nunca"
+
+msgid "Last error"
+msgstr "Último error"
+
+msgid "Check now"
+msgstr "Comprobar ahora"
+
+msgid "Release notes"
+msgstr "Notas de la versión"
+
+
+
+#, php-format
+msgid "GitHub is not reachable: %s"
+msgstr "No se puede conectar con GitHub: %s"
+
+msgid "GitHub refused the request (rate limit). Try again later."
+msgstr "GitHub rechazó la solicitud (límite alcanzado). Inténtalo más tarde."
+
+msgid "No release published yet."
+msgstr "Aún no se ha publicado ninguna versión."
+
+#, php-format
+msgid "GitHub answered with HTTP %d."
+msgstr "GitHub respondió con HTTP %d."
+
+msgid "GitHub sent an unexpected answer."
+msgstr "GitHub envió una respuesta inesperada."
+
+#, php-format
+msgid "Release tag %s is not a valid version."
+msgstr "La etiqueta %s no es una versión válida."
+
+#, php-format
+msgid "Release %1$s has no %2$s."
+msgstr "La versión %1$s no incluye %2$s."
+
+msgid "You are not allowed to do this."
+msgstr "No tienes permiso para hacer esto."
+
+msgid "Development mode"
+msgstr "Modo de desarrollo"
+
+msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
+msgstr "Desactiva las actualizaciones del tema desde GitHub. ACTÍVALO para un sitio local de desarrollo que sea un checkout de git. Déjalo DESACTIVADO en producción."
+
+msgid "Development mode is on, so this update is not installed."
+msgstr "El modo de desarrollo está activado, así que esta actualización no se instala."
+
+msgid "Development mode is on (Advanced tab), so updates are switched off."
+msgstr "El modo de desarrollo está activado (pestaña Avanzado), así que las actualizaciones están desactivadas."

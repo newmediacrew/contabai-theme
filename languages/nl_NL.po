@@ -1,0 +1,730 @@
+# Dutch translations for Contabai package.
+# Copyright (C) 2026 THE Contabai'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Contabai Theme package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Contabai Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-17 19:20+0200\n"
+"PO-Revision-Date: 2026-07-11 20:30+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "100% width"
+msgstr "100% breedte"
+
+msgid "404 Oops"
+msgstr "404 Oeps"
+
+msgid ""
+"A fresh pick of homes and villas from across the catalogue — every one "
+"booked direct with the host."
+msgstr ""
+"Een frisse selectie huizen en villa’s uit de hele catalogus — allemaal "
+"direct bij de host geboekt."
+
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+msgid ""
+"Agree the price and pay the host directly — we never touch the money or step "
+"into your booking."
+msgstr ""
+"Spreek de prijs af en betaal rechtstreeks aan de host — wij komen niet aan "
+"het geld en bemoeien ons niet met je boeking."
+
+msgid "All destinations"
+msgstr "Alle bestemmingen"
+
+msgid "Always"
+msgstr "Altijd"
+
+msgid "Angled soft"
+msgstr "Schuin zacht"
+
+msgid ""
+"Are you a host somewhere else? Tell us where you host and we’ll bring direct "
+"booking to your corner of the world."
+msgstr ""
+"Ben je ergens anders host? Vertel ons waar je verhuurt en wij brengen direct "
+"boeken naar jouw deel van de wereld."
+
+msgid "Area"
+msgstr "Regio"
+
+msgid "Aruba"
+msgstr "Aruba"
+
+msgid ""
+"Ask anything and agree the details straight with the owner — real answers "
+"from the person who knows the place best."
+msgstr ""
+"Vraag alles en spreek de details rechtstreeks af met de eigenaar — echte "
+"antwoorden van wie de woning het beste kent."
+
+msgid "Auto"
+msgstr "Automatisch"
+
+msgid "Back to home"
+msgstr "Terug naar home"
+
+msgid "Background"
+msgstr "Achtergrond"
+
+msgid "Background animation"
+msgstr "Achtergrondanimatie"
+
+msgid "Badge 1 icon"
+msgstr "Badge 1-pictogram"
+
+msgid "Badge 1 icon color"
+msgstr "Badge 1-pictogramkleur"
+
+msgid "Badge 1 text"
+msgstr "Badge 1-tekst"
+
+msgid "Badge 2 icon"
+msgstr "Badge 2-pictogram"
+
+msgid "Badge 2 icon color"
+msgstr "Badge 2-pictogramkleur"
+
+msgid "Badge 2 text"
+msgstr "Badge 2-tekst"
+
+msgid "Badge 3 icon"
+msgstr "Badge 3-pictogram"
+
+msgid "Badge 3 icon color"
+msgstr "Badge 3-pictogramkleur"
+
+msgid "Badge 3 text"
+msgstr "Badge 3-tekst"
+
+msgid "Base font size"
+msgstr "Basislettergrootte"
+
+msgid "Become a host"
+msgstr "Word host"
+
+msgid "Body font"
+msgstr "Bodylettertype"
+
+msgid "Body text color"
+msgstr "Tekstkleur"
+
+msgid "Bold"
+msgstr "Vet"
+
+msgid ""
+"Bold, italic and links are kept; the top bar is a single line, so paragraphs "
+"and lists are not."
+msgstr ""
+"Vet, cursief en links blijven behouden; de bovenbalk is één regel, dus "
+"alinea's en lijsten niet."
+
+msgid "Bonaire"
+msgstr "Bonaire"
+
+msgid "Book direct"
+msgstr "Direct boeken"
+
+msgid "Book in three steps"
+msgstr "Boek in drie stappen"
+
+msgid "Bottom center"
+msgstr "Onder midden"
+
+msgid "Bottom left"
+msgstr "Linksonder"
+
+msgid "Bottom right"
+msgstr "Rechtsonder"
+
+msgid "Bottom to top"
+msgstr "Van beneden naar boven"
+
+msgid "Branding"
+msgstr "Branding"
+
+msgid "Breadcrumbs"
+msgstr "Broodkruimels"
+
+msgid "Breathe"
+msgstr "Ademen"
+
+msgid "Browse all listings"
+msgstr "Bekijk alle woningen"
+
+msgid "Built to cut out the middleman"
+msgstr "Gebouwd om de tussenpersoon weg te laten"
+
+msgid "CTA URL"
+msgstr "CTA-URL"
+
+msgid "CTA label"
+msgstr "CTA-label"
+
+msgid "Call-to-action button"
+msgstr "Call-to-action-knop"
+
+msgid "Center"
+msgstr "Midden"
+
+msgid "Chats"
+msgstr "Chats"
+
+msgid "Choose file"
+msgstr "Bestand kiezen"
+
+msgid "City"
+msgstr "Stad"
+
+msgid "Classic editor"
+msgstr "Klassieke editor"
+
+msgid "Close"
+msgstr "Sluiten"
+
+msgid "Color"
+msgstr "Kleur"
+
+msgid "Column %d icon"
+msgstr "Pictogram van kolom %d"
+
+msgid "Column %d icon color"
+msgstr "Pictogramkleur van kolom %d"
+
+msgid "Column %d text"
+msgstr "Tekst van kolom %d"
+
+msgid "Column %d title"
+msgstr "Titel van kolom %d"
+
+msgid "Contabai Theme"
+msgstr "Contabai Theme"
+
+msgid "Contain"
+msgstr "Passend"
+
+msgid "Content opacity"
+msgstr "Dekking inhoud"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Cover"
+msgstr "Vullend"
+
+msgid "Crossfade only"
+msgstr "Alleen crossfade"
+
+msgid "Curaçao"
+msgstr "Curaçao"
+
+msgid "Diagonal"
+msgstr "Diagonaal"
+
+msgid "Diagonal drift"
+msgstr "Diagonale beweging"
+
+msgid "Direct contact"
+msgstr "Direct contact"
+
+msgid "Dual tone"
+msgstr "Duotoon"
+
+msgid "Enable"
+msgstr "Inschakelen"
+
+msgid "Extra bold"
+msgstr "Extra vet"
+
+msgid "Eyebrow"
+msgstr "Bovenkopje"
+
+msgid "Eyebrow color"
+msgstr "Bovenkopkleur"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Fairer prices"
+msgstr "Eerlijkere prijzen"
+
+msgid "Footer"
+msgstr "Voettekst"
+
+msgid ""
+"From snug studios to grand villas — room for couples, families and groups."
+msgstr ""
+"Van knusse studio’s tot grote villa’s — ruimte voor stellen, gezinnen en "
+"groepen."
+
+msgid "Gradient"
+msgstr "Verloop"
+
+msgid "Handpicked"
+msgstr "Zorgvuldig gekozen"
+
+msgid "Header navigation"
+msgstr "Headernavigatie"
+
+msgid "Heading"
+msgstr "Kop"
+
+msgid "Heading color"
+msgstr "Kopkleur"
+
+msgid "Heading font"
+msgstr "Kop-lettertype"
+
+msgid "Heading line height"
+msgstr "Regelhoogte kop"
+
+msgid "Heading weight"
+msgstr "Kopdikte"
+
+msgid "Hero"
+msgstr "Hero"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Homes and villas from the Dutch Caribbean to the rest of the world."
+msgstr ""
+"Huizen en villa’s van de Nederlandse Cariben tot de rest van de wereld."
+
+msgid "Hosts keep more"
+msgstr "Hosts houden meer over"
+
+msgid "I would like to host on Mitabon."
+msgstr "Ik wil host worden op Mitabon."
+
+msgid "Image"
+msgstr "Afbeelding"
+
+msgid "Instagram"
+msgstr "Instagram"
+
+msgid "Ken Burns — zoom in"
+msgstr "Ken Burns — inzoomen"
+
+msgid "Ken Burns — zoom out"
+msgstr "Ken Burns — uitzoomen"
+
+msgid "Left"
+msgstr "Links"
+
+msgid "Left center"
+msgstr "Links midden"
+
+msgid "Left to right"
+msgstr "Van links naar rechts"
+
+msgid "Line height"
+msgstr "Regelhoogte"
+
+msgid "Link color"
+msgstr "Linkkleur"
+
+msgid "Link underline"
+msgstr "Link-onderstreping"
+
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+msgid "List it on Mitabon — keep what you earn"
+msgstr "Zet het op Mitabon — en houd wat je verdient"
+
+msgid "Medium"
+msgstr "Gemiddeld"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Mesh subtle"
+msgstr "Subtiele mesh"
+
+msgid "Message hosts directly for honest answers and local tips."
+msgstr ""
+"Stuur hosts direct een bericht voor eerlijke antwoorden en lokale tips."
+
+msgid "Message the host"
+msgstr "Bericht de host"
+
+msgid ""
+"Messaging a host and booking need a free, verified account — a quick sign-up "
+"keeps guests and hosts safe."
+msgstr ""
+"Een host berichten en boeken vereisen een gratis, geverifieerd account — een "
+"snelle aanmelding houdt gasten en hosts veilig."
+
+msgid "More of what you pay reaches the person hosting you."
+msgstr "Meer van wat je betaalt komt terecht bij wie jou host."
+
+msgid "My hub"
+msgstr "Mijn hub"
+
+msgid "New destination request"
+msgstr "Nieuwe bestemmingsaanvraag"
+
+msgid "Next"
+msgstr "Volgende"
+
+msgid "No booking fees"
+msgstr "Geen boekingskosten"
+
+msgid "No middleman markup baked into the nightly rate."
+msgstr "Geen opslag van een tussenpersoon in de prijs per nacht."
+
+msgid "No platform commission"
+msgstr "Geen platformcommissie"
+
+msgid "No posts found in this category."
+msgstr "Geen berichten gevonden in deze categorie."
+
+msgid "No repeat"
+msgstr "Niet herhalen"
+
+msgid "None"
+msgstr "Geen"
+
+msgid "Normal"
+msgstr "Normaal"
+
+msgid "Not a cent is skimmed off your booking."
+msgstr "Geen cent gaat van je boeking af."
+
+msgid "Not on the map yet?"
+msgstr "Nog niet op de kaart?"
+
+msgid "On hover"
+msgstr "Bij hover"
+
+msgid "Our first islands"
+msgstr "Onze eerste eilanden"
+
+msgid "Overlay color"
+msgstr "Overlay-kleur"
+
+msgid "Overlay opacity"
+msgstr "Overlay-dekking"
+
+msgid "Own a place?"
+msgstr "Heb je een plek?"
+
+msgid "Page not found."
+msgstr "Pagina niet gevonden."
+
+msgid "Pan down"
+msgstr "Naar beneden pannen"
+
+msgid "Pan left"
+msgstr "Naar links pannen"
+
+msgid "Pan right"
+msgstr "Naar rechts pannen"
+
+msgid "Pan up"
+msgstr "Naar boven pannen"
+
+msgid "Paragraph spacing"
+msgstr "Alinea-afstand"
+
+msgid "Payoff"
+msgstr "Slogan"
+
+msgid "Position"
+msgstr "Positie"
+
+msgid "Powered by Contabai"
+msgstr "Powered by Contabai"
+
+msgid "Previous"
+msgstr "Vorige"
+
+msgid "Privacy"
+msgstr "Privacy"
+
+msgid "Privacy policy"
+msgstr "Privacybeleid"
+
+msgid "Privacy statement"
+msgstr "Privacyverklaring"
+
+msgid "Radial"
+msgstr "Radiaal"
+
+msgid ""
+"Reach travellers worldwide and book them direct. No commission on the stay, "
+"no middleman between you and your guests — you set the price and keep what "
+"you earn."
+msgstr ""
+"Bereik reizigers wereldwijd en laat ze direct boeken. Geen commissie op het "
+"verblijf, geen tussenpersoon tussen jou en je gasten — jij bepaalt de prijs "
+"en houdt wat je verdient."
+
+msgid "Relaxed"
+msgstr "Ruim"
+
+msgid "Remove"
+msgstr "Verwijderen"
+
+msgid "Repeat"
+msgstr "Herhalen"
+
+msgid "Repeat all"
+msgstr "Alles herhalen"
+
+msgid "Repeat horizontal"
+msgstr "Horizontaal herhalen"
+
+msgid "Repeat vertical"
+msgstr "Verticaal herhalen"
+
+msgid "Right"
+msgstr "Rechts"
+
+msgid "Right center"
+msgstr "Rechts midden"
+
+msgid "Search & discover"
+msgstr "Zoeken & ontdekken"
+
+msgid "Semibold"
+msgstr "Halfvet"
+
+msgid "Settings saved."
+msgstr "Instellingen opgeslagen."
+
+msgid "Show brand text"
+msgstr "Merktekst tonen"
+
+msgid "Show hero on homepage"
+msgstr "Hero op de homepage tonen"
+
+msgid "Show top bar"
+msgstr "Bovenbalk tonen"
+
+msgid "Showing %1$s to %2$s of %3$s results"
+msgstr "Toont %1$s tot %2$s van %3$s resultaten"
+
+msgid "Shown in a pop-up from the footer link."
+msgstr "Wordt in een pop-up getoond via de link in de voettekst."
+
+msgid "Simple by design"
+msgstr "Simpel met opzet"
+
+msgid "Site name"
+msgstr "Sitenaam"
+
+msgid "Size"
+msgstr "Grootte"
+
+msgid "Socials"
+msgstr "Sociale media"
+
+msgid "Soft fade"
+msgstr "Zachte overgang"
+
+msgid "Static (no motion)"
+msgstr "Statisch (geen beweging)"
+
+msgid "Stays for everyone"
+msgstr "Verblijven voor iedereen"
+
+msgid "Stays worth the trip"
+msgstr "Verblijven die de reis waard zijn"
+
+msgid "Sticky header"
+msgstr "Vastgezette koptekst"
+
+msgid "Subheading"
+msgstr "Subkop"
+
+msgid "Subheading color"
+msgstr "Subkopkleur"
+
+msgid "Suggest your destination"
+msgstr "Stel je bestemming voor"
+
+msgid ""
+"Tell us where, when and with how many. Filter by type, price and amenities."
+msgstr ""
+"Vertel ons waarheen, wanneer en met hoeveel. Filter op type, prijs en "
+"voorzieningen."
+
+msgid "Terms"
+msgstr "Voorwaarden"
+
+msgid "Terms of service"
+msgstr "Servicevoorwaarden"
+
+msgid "Terms statement"
+msgstr "Voorwaarden"
+
+msgid "Text alignment"
+msgstr "Tekstuitlijning"
+
+msgid "Text color"
+msgstr "Tekstkleur"
+
+msgid ""
+"The big rental platforms take a cut of nearly every booking — often around "
+"15%. That money has to come from somewhere: a higher price for you, and less "
+"for the host who actually welcomes you in."
+msgstr ""
+"De grote verhuurplatforms pakken bij vrijwel elke boeking een deel — vaak "
+"zo’n 15%. Dat geld moet ergens vandaan komen: een hogere prijs voor jou, en "
+"minder voor de host die je echt ontvangt."
+
+msgid "The price you see is the price you pay — nothing added at checkout."
+msgstr ""
+"De prijs die je ziet, is de prijs die je betaalt — niets komt er bij af te "
+"rekenen."
+
+msgid "Theme color"
+msgstr "Themakleur"
+
+msgid "Three stop"
+msgstr "Drie stops"
+
+msgid "Tight"
+msgstr "Krap"
+
+msgid "TikTok"
+msgstr "TikTok"
+
+msgid "Top bar"
+msgstr "Bovenbalk"
+
+msgid "Top center"
+msgstr "Boven midden"
+
+msgid "Top left"
+msgstr "Linksboven"
+
+msgid "Top right"
+msgstr "Rechtsboven"
+
+msgid "Top to bottom"
+msgstr "Van boven naar beneden"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Typography"
+msgstr "Typografie"
+
+msgid ""
+"We are starting close to home, in the Dutch Caribbean — and rolling out "
+"worldwide from there."
+msgstr ""
+"We beginnen dicht bij huis, in de Nederlandse Cariben — en breiden van "
+"daaruit wereldwijd uit."
+
+msgid ""
+"We were tired of watching that. So Mitabon works the other way round — you "
+"book straight with the host, the money never passes through us, and no "
+"platform commission inflates the price. Fair for you, fair for the people "
+"who open their doors."
+msgstr ""
+"We waren het zat om dat aan te zien. Daarom werkt Mitabon andersom — je "
+"boekt rechtstreeks bij de host, het geld loopt nooit via ons, en geen "
+"platformcommissie jaagt de prijs op. Eerlijk voor jou, eerlijk voor de "
+"mensen die hun deuren openen."
+
+msgid "Where it all starts"
+msgstr "Waar het allemaal begint"
+
+msgid "Why Mitabon"
+msgstr "Waarom Mitabon"
+
+msgid "Worldwide selection"
+msgstr "Wereldwijd aanbod"
+
+msgid "X"
+msgstr "X"
+
+msgid "YouTube"
+msgstr "YouTube"
+
+msgid "Updates"
+msgstr "Updates"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Installed version"
+msgstr "Geïnstalleerde versie"
+
+msgid "Latest release"
+msgstr "Nieuwste release"
+
+msgid "Update available"
+msgstr "Update beschikbaar"
+
+msgid "Last check"
+msgstr "Laatste controle"
+
+msgid "Never"
+msgstr "Nooit"
+
+msgid "Last error"
+msgstr "Laatste fout"
+
+msgid "Check now"
+msgstr "Nu controleren"
+
+msgid "Release notes"
+msgstr "Release-opmerkingen"
+
+
+
+#, php-format
+msgid "GitHub is not reachable: %s"
+msgstr "GitHub is niet bereikbaar: %s"
+
+msgid "GitHub refused the request (rate limit). Try again later."
+msgstr "GitHub weigerde het verzoek (limiet bereikt). Probeer het later opnieuw."
+
+msgid "No release published yet."
+msgstr "Nog geen release gepubliceerd."
+
+#, php-format
+msgid "GitHub answered with HTTP %d."
+msgstr "GitHub antwoordde met HTTP %d."
+
+msgid "GitHub sent an unexpected answer."
+msgstr "GitHub stuurde een onverwacht antwoord."
+
+#, php-format
+msgid "Release tag %s is not a valid version."
+msgstr "Releasetag %s is geen geldige versie."
+
+#, php-format
+msgid "Release %1$s has no %2$s."
+msgstr "Release %1$s heeft geen %2$s."
+
+msgid "You are not allowed to do this."
+msgstr "Je hebt geen toestemming om dit te doen."
+
+msgid "Development mode"
+msgstr "Ontwikkelmodus"
+
+msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
+msgstr "Schakelt thema-updates vanaf GitHub uit. Zet AAN voor een lokale ontwikkelsite die een git-checkout is. Laat UIT in productie."
+
+msgid "Development mode is on, so this update is not installed."
+msgstr "De ontwikkelmodus staat aan, dus deze update wordt niet geïnstalleerd."
+
+msgid "Development mode is on (Advanced tab), so updates are switched off."
+msgstr "De ontwikkelmodus staat aan (tabblad Geavanceerd), dus updates zijn uitgeschakeld."
