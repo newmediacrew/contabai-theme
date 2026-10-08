@@ -2,7 +2,13 @@
 /* Template Name: Listing (no breadcrumb) */
 
 $isListingDetail = (bool) get_query_var('contabai_listing_id');
-if (! $isListingDetail) {
+$overlay = ! $isListingDetail;
+if ($isListingDetail && class_exists('Contabai\\Controllers\\ListingController')) {
+    [$listingData] = \Contabai\Controllers\ListingController::get((int) get_query_var('contabai_listing_id'));
+    $listingForHeader = $listingData['data']['listing'] ?? null;
+    $overlay = $listingForHeader && ! empty($listingForHeader['photos']) && \Contabai\Controllers\ListingController::hostAllows($listingForHeader);
+}
+if ($overlay) {
     set_query_var('contabai_overlay_header', true);
 }
 ?>
