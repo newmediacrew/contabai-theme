@@ -731,3 +731,15 @@ msgstr "Der Entwicklungsmodus ist an (Tab Erweitert), daher sind Updates ausgesc
 
 msgid "Section eyebrow color"
 msgstr "Kennzeilenfarbe der Abschnitte"
+
+msgid "The default design and typography are restored."
+msgstr "Das Standarddesign und die Typografie wurden wiederhergestellt."
+
+msgid "Restore default design"
+msgstr "Standarddesign wiederherstellen"
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr "Setzt Farben, Schriften, Typografie, Hintergrund und den Look des Hero auf das Standarddesign des Themes zurück. Texte, Logo, Menüs, Links und alle anderen Einstellungen bleiben, wie sie sind."
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr "Standarddesign und Typografie wiederherstellen? Deine eigenen Farben und Schriften werden ersetzt."

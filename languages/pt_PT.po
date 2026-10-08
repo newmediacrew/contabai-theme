@@ -709,3 +709,15 @@ msgstr "O modo de desenvolvimento está ativo (separador Avançado), por isso as
 
 msgid "Section eyebrow color"
 msgstr "Cor do sobretítulo das secções"
+
+msgid "The default design and typography are restored."
+msgstr "O design e a tipografia predefinidos foram repostos."
+
+msgid "Restore default design"
+msgstr "Repor o design predefinido"
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr "Repõe as cores, os tipos de letra, a tipografia, o fundo e o aspeto do hero no design predefinido do tema. Os textos, o logótipo, os menus, as ligações e todas as outras definições ficam como estão."
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr "Repor o design e a tipografia predefinidos? As tuas próprias cores e tipos de letra serão substituídos."

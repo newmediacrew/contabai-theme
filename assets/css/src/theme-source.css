@@ -83,7 +83,7 @@
 @keyframes cb-diagonal { 0% { opacity: 0; transform: scale(1.16) translate(2.5%, 2.5%); } 4% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; transform: scale(1.16) translate(-2.5%, -2.5%); } 100% { opacity: 0; transform: scale(1.16) translate(-2.5%, -2.5%); } }
 @keyframes cb-fade { 0% { opacity: 0; } 4% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
 @keyframes cb-breathe { 0% { opacity: 0; transform: scale(1.02); } 4% { opacity: 1; } 17% { transform: scale(1.08); } 29% { transform: scale(1.03); } 33% { opacity: 1; transform: scale(1.06); } 38% { opacity: 0; } 100% { opacity: 0; transform: scale(1.02); } }
-.contabai-hero-overlay { position: absolute; inset: 0; background: var(--hero-overlay-color, #0f171e); opacity: var(--hero-overlay-opacity, .5); }
+.contabai-hero-overlay { position: absolute; inset: 0; background: var(--hero-overlay-color, #0f171e); opacity: var(--hero-overlay-opacity, .3); }
 .contabai-hero-inner { position: relative; width: 100%; padding-block: 5rem 6rem; text-align: center; }
 .contabai-hero-eyebrow { font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--hero-eyebrow-color, #ffd9c9); }
 .contabai-hero-title { color: var(--hero-heading-color, #fff); font-family: var(--theme-heading-font, var(--theme-font)); font-size: clamp(2.6rem, 7vw, 5.75rem); font-weight: var(--heading-weight, 700); line-height: 1.02; letter-spacing: -.01em; margin: .55rem auto 0; max-width: 16ch; text-wrap: balance; text-shadow: 0 2px 30px rgba(0, 0, 0, .25); }
@@ -129,7 +129,7 @@
 }
 .contabai-photo-hero-img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; animation: cb-photo-zoom 28s ease-in-out infinite alternate; }
 .contabai-photo-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(15, 23, 30, .55) 0%, rgba(15, 23, 30, .05) 35%, rgba(15, 23, 30, .25) 60%, rgba(15, 23, 30, .8) 100%); }
-.contabai-photo-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--hero-overlay-color, #0f171e); opacity: var(--hero-overlay-opacity, .5); }
+.contabai-photo-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--hero-overlay-color, #0f171e); opacity: var(--hero-overlay-opacity, .3); }
 @keyframes cb-photo-zoom { from { transform: scale(1.03); } to { transform: scale(1.12) translate(1%, -1%); } }
 .contabai-photo-hero-inner { padding-block: 2rem 7.5rem; }
 .contabai-photo-hero nav[aria-label="breadcrumb"] a,

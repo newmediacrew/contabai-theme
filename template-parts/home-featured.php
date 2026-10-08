@@ -16,5 +16,5 @@ $listingsUrl  = $listingsPage ? get_permalink($listingsPage) : home_url('/contab
             <a href="<?php echo esc_url($listingsUrl); ?>" class="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-semibold text-[color:var(--content-link-color,#ff5400)] contabai-link transition hover:opacity-80"><?php echo esc_html__('Browse all listings', 'contabai-theme'); ?><?php echo Heroicon::solid('chevron-right', 'w-4 h-4'); ?></a>
         </div>
     </div>
-    <?php echo do_shortcode('[contabai_random_listings count="8"]'); ?>
+    <?php echo do_shortcode('[contabai_random_listings count="9"]'); ?>
 </section>

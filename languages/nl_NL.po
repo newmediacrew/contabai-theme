@@ -731,3 +731,15 @@ msgstr "De ontwikkelmodus staat aan (tabblad Geavanceerd), dus updates zijn uitg
 
 msgid "Section eyebrow color"
 msgstr "Bovenkopkleur secties"
+
+msgid "The default design and typography are restored."
+msgstr "Het standaardontwerp en de typografie zijn hersteld."
+
+msgid "Restore default design"
+msgstr "Standaardontwerp herstellen"
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr "Zet de kleuren, lettertypen, typografie, achtergrond en de look van de hero terug naar het standaardontwerp van het thema. Teksten, logo, menu's, links en alle andere instellingen blijven zoals ze zijn."
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr "Standaardontwerp en typografie herstellen? Je eigen kleuren en lettertypen worden vervangen."

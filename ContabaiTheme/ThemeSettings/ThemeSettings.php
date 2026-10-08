@@ -6,6 +6,19 @@ use ContabaiTheme\Heroicon;
 
 class ThemeSettings
 {
+    public const DESIGN_DEFAULTS = [
+        'theme_color_schema'        => '#a8431f',
+        'theme_link_color'          => '#a8431f',
+        'theme_font_schema'         => 'DM Sans',
+        'theme_heading_font'        => 'Playfair Display',
+        'theme_heading_weight'      => '500',
+        'theme_heading_line_height' => '1.1',
+        'theme_heading_color'       => '#1d1a17',
+        'theme_body_text_color'     => '#3a332d',
+        'theme_bg_type'             => 'color',
+        'theme_bg_color'            => '#f7f1e8',
+    ];
+
     private array $google_fonts = [
         'Abel', 'Albert Sans', 'Amatic SC', 'Anton', 'Archivo',
         'Arimo', 'Asap', 'Asap Condensed', 'Atkinson Hyperlegible', 'Baloo 2',
@@ -48,6 +61,28 @@ class ThemeSettings
         add_action('admin_enqueue_scripts', [$this, 'enqueue_media_uploader']);
         add_filter('use_block_editor_for_post', [$this, 'maybe_classic_editor']);
         add_action('wp_enqueue_scripts', [$this, 'maybe_dequeue_block_css'], 100);
+        add_action('admin_post_contabai_theme_reset_design', [$this, 'handle_reset_design']);
+    }
+
+    public function handle_reset_design(): void
+    {
+        if (! current_user_can('edit_theme_options')) {
+            wp_die(esc_html__('You are not allowed to do this.', 'contabai-theme'), 403);
+        }
+        check_admin_referer('contabai_theme_reset_design', 'contabai_theme_reset_design_nonce');
+
+        foreach ($this->fields() as $field) {
+            [$key, , $type, , $tab] = $field;
+            if ($type === 'color' || in_array($tab, ['typography', 'background'], true) || in_array($key, ['theme_hero_animation', 'theme_hero_overlay_opacity', 'theme_hero_align'], true)) {
+                delete_option($key);
+            }
+        }
+        foreach (self::DESIGN_DEFAULTS as $option => $value) {
+            update_option($option, $value);
+        }
+
+        wp_safe_redirect(add_query_arg(['page' => 'contabai-theme-options', 'tab' => 'advanced', 'design-reset' => '1'], admin_url('admin.php')));
+        exit;
     }
 
     public function sanitize_site_name($value): string
@@ -127,7 +162,7 @@ class ThemeSettings
             ['theme_hero_badge3_icon_color', __('Badge 3 icon color', 'contabai-theme'), 'color', '#22c55e', 'hero'],
             ['theme_hero_animation', __('Background animation', 'contabai-theme'), 'hero_anim', 'zoom-in', 'hero'],
             ['theme_hero_overlay_color', __('Overlay color', 'contabai-theme'), 'color', '#0f171e', 'hero'],
-            ['theme_hero_overlay_opacity', __('Overlay opacity', 'contabai-theme'), 'hero_overlay_opacity', '50', 'hero'],
+            ['theme_hero_overlay_opacity', __('Overlay opacity', 'contabai-theme'), 'hero_overlay_opacity', '30', 'hero'],
             ['theme_hero_align', __('Text alignment', 'contabai-theme'), 'hero_align', 'center', 'hero'],
 
             ['theme_topbar_enabled', __('Show top bar', 'contabai-theme'), 'checkbox', '0', 'topbar'],
@@ -290,6 +325,9 @@ class ThemeSettings
         if (isset($_GET['settings-updated'])) {
             add_settings_error('contabai_theme_messages', 'saved', __('Settings saved.', 'contabai-theme'), 'updated');
         }
+        if (isset($_GET['design-reset'])) {
+            add_settings_error('contabai_theme_messages', 'design-reset', __('The default design and typography are restored.', 'contabai-theme'), 'updated');
+        }
 
         ?>
         <div class="wrap contabai-admin">
@@ -312,6 +350,16 @@ class ThemeSettings
                 submit_button();
                 ?>
             </form>
+            <?php if ($current === 'advanced') : ?>
+                <hr>
+                <h2><?php esc_html_e('Restore default design', 'contabai-theme'); ?></h2>
+                <p class="description"><?php esc_html_e('Sets the colours, fonts, typography, background and hero look back to the theme\'s default design. Texts, logo, menus, links and all other settings stay as they are.', 'contabai-theme'); ?></p>
+                <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" onsubmit="return window.confirm('<?php echo esc_js(__('Restore the default design and typography? Your own colours and fonts will be replaced.', 'contabai-theme')); ?>');">
+                    <input type="hidden" name="action" value="contabai_theme_reset_design">
+                    <?php wp_nonce_field('contabai_theme_reset_design', 'contabai_theme_reset_design_nonce'); ?>
+                    <?php submit_button(__('Restore default design', 'contabai-theme'), 'secondary', 'contabai-theme-reset-design', false); ?>
+                </form>
+            <?php endif; ?>
             <?php endif; ?>
 
             <?php
@@ -709,9 +757,9 @@ class ThemeSettings
         $heroHeadingColor = esc_attr(get_option('theme_hero_heading_color', '#ffffff')) ?: '#ffffff';
         $heroSubColor = esc_attr(get_option('theme_hero_subheading_color', '#e7ecef')) ?: '#e7ecef';
         $overlayColor = esc_attr(get_option('theme_hero_overlay_color', '#0f171e')) ?: '#0f171e';
-        $overlayOpacity = (int) get_option('theme_hero_overlay_opacity', '50');
+        $overlayOpacity = (int) get_option('theme_hero_overlay_opacity', '30');
         if ($overlayOpacity < 0 || $overlayOpacity > 100) {
-            $overlayOpacity = 50;
+            $overlayOpacity = 30;
         }
         $overlayOpacity = $overlayOpacity / 100;
         $heroBadge1 = esc_attr(get_option('theme_hero_badge1_icon_color', '#22c55e')) ?: '#22c55e';

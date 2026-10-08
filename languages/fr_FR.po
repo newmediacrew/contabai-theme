@@ -709,3 +709,15 @@ msgstr "Le mode développement est activé (onglet Avancé), donc les mises à j
 
 msgid "Section eyebrow color"
 msgstr "Couleur du surtitre des sections"
+
+msgid "The default design and typography are restored."
+msgstr "Le design et la typographie par défaut sont restaurés."
+
+msgid "Restore default design"
+msgstr "Restaurer le design par défaut"
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr "Remet les couleurs, les polices, la typographie, l'arrière-plan et le look du hero au design par défaut du thème. Les textes, le logo, les menus, les liens et tous les autres réglages restent inchangés."
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr "Restaurer le design et la typographie par défaut ? Tes propres couleurs et polices seront remplacées."

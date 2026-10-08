@@ -728,3 +728,15 @@ msgstr "El modo de desarrollo está activado (pestaña Avanzado), así que las a
 
 msgid "Section eyebrow color"
 msgstr "Color del antetítulo de las secciones"
+
+msgid "The default design and typography are restored."
+msgstr "Se han restaurado el diseño y la tipografía predeterminados."
+
+msgid "Restore default design"
+msgstr "Restaurar el diseño predeterminado"
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr "Devuelve los colores, las fuentes, la tipografía, el fondo y el aspecto del hero al diseño predeterminado del tema. Los textos, el logo, los menús, los enlaces y el resto de ajustes se quedan como están."
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr "¿Restaurar el diseño y la tipografía predeterminados? Se sustituirán tus propios colores y fuentes."

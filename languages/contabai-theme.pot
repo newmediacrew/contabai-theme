@@ -662,3 +662,15 @@ msgstr ""
 
 msgid "Section eyebrow color"
 msgstr ""
+
+msgid "The default design and typography are restored."
+msgstr ""
+
+msgid "Restore default design"
+msgstr ""
+
+msgid "Sets the colours, fonts, typography, background and hero look back to the theme's default design. Texts, logo, menus, links and all other settings stay as they are."
+msgstr ""
+
+msgid "Restore the default design and typography? Your own colours and fonts will be replaced."
+msgstr ""
