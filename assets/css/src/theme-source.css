@@ -145,6 +145,8 @@
     .contabai-photo-body .contabai-search-bar { border-radius: 9999px; border-color: transparent; box-shadow: 0 24px 60px rgba(60, 40, 20, .16); }
     .contabai-photo-body .contabai-search-bar > button { border-radius: 9999px; }
     .contabai-photo-body .contabai-search-submit { border-radius: 9999px; }
+.contabai-hero-search .contabai-search-bar > button:first-child,
+.contabai-photo-body .contabai-search-bar > button:first-child { padding-left: 1.75rem; }
 }
 @media (prefers-reduced-motion: reduce) { .contabai-photo-hero-img { animation: none; } }
 .contabai-header-overlay { margin-bottom: calc(-1 * var(--contabai-header-h, 78px)); transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease; }
