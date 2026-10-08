@@ -662,15 +662,3 @@ msgstr ""
 
 msgid "Section eyebrow color"
 msgstr ""
-
-msgid "Golden hour, your own pool"
-msgstr ""
-
-msgid "Nobody in between you and the view."
-msgstr ""
-
-msgid "You talk to the owner, agree the details and pay them directly. The price you see is the price the host sets."
-msgstr ""
-
-msgid "How direct booking works"
-msgstr ""

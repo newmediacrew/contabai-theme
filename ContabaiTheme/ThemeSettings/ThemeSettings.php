@@ -130,7 +130,7 @@ class ThemeSettings
             ['theme_hero_overlay_opacity', __('Overlay opacity', 'contabai-theme'), 'hero_overlay_opacity', '50', 'hero'],
             ['theme_hero_align', __('Text alignment', 'contabai-theme'), 'hero_align', 'center', 'hero'],
 
-            ['theme_topbar_enabled', __('Show top bar', 'contabai-theme'), 'checkbox', '1', 'topbar'],
+            ['theme_topbar_enabled', __('Show top bar', 'contabai-theme'), 'checkbox', '0', 'topbar'],
             ['theme_topbar_bg', __('Background', 'contabai-theme'), 'color', '#1f2d3d', 'topbar'],
             ['theme_topbar_text', __('Text color', 'contabai-theme'), 'color', '#ffffff', 'topbar'],
 

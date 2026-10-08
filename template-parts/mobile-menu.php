@@ -4,7 +4,7 @@ use ContabaiTheme\Heroicon;
 ?>
 <div x-data="{ slideOverOpen: false }" class="lg:hidden">
     <button x-on:click="slideOverOpen = true" title="<?php esc_attr_e('Menu', 'contabai-theme'); ?>" aria-label="<?php esc_attr_e('Menu', 'contabai-theme'); ?>"
-            class="inline-flex h-9 w-9 items-center justify-center rounded-md text-neutral-700 transition hover:bg-neutral-100">
+            class="contabai-header-icon inline-flex h-9 w-9 items-center justify-center rounded-full text-neutral-700 transition hover:bg-neutral-100">
         <?php echo Heroicon::solid('bars-3', 'w-4 h-4'); ?>
     </button>
     <template x-teleport="body">

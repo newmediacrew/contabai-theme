@@ -709,15 +709,3 @@ msgstr "O modo de desenvolvimento está ativo (separador Avançado), por isso as
 
 msgid "Section eyebrow color"
 msgstr "Cor do sobretítulo das secções"
-
-msgid "Golden hour, your own pool"
-msgstr "A hora dourada, a tua própria piscina"
-
-msgid "Nobody in between you and the view."
-msgstr "Ninguém entre ti e a vista."
-
-msgid "You talk to the owner, agree the details and pay them directly. The price you see is the price the host sets."
-msgstr "Falas com o proprietário, combinam os detalhes e pagas-lhe diretamente. O preço que vês é o preço que o anfitrião define."
-
-msgid "How direct booking works"
-msgstr "Como funciona a reserva direta"

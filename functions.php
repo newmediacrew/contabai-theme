@@ -26,6 +26,7 @@ add_action('after_switch_theme', function () {
         'theme_body_text_color'     => '#3a332d',
         'theme_bg_type'             => 'color',
         'theme_bg_color'            => '#f7f1e8',
+        'theme_cta_enabled'         => '1',
     ] as $option => $value) {
         add_option($option, $value);
     }
@@ -36,7 +37,7 @@ add_action('init', function () {
 });
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('contabai-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '61');
+    wp_enqueue_style('contabai-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '65');
 });
 
 add_action('wp_head', function () {

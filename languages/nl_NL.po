@@ -731,15 +731,3 @@ msgstr "De ontwikkelmodus staat aan (tabblad Geavanceerd), dus updates zijn uitg
 
 msgid "Section eyebrow color"
 msgstr "Bovenkopkleur secties"
-
-msgid "Golden hour, your own pool"
-msgstr "Gouden uur, je eigen zwembad"
-
-msgid "Nobody in between you and the view."
-msgstr "Niemand tussen jou en het uitzicht."
-
-msgid "You talk to the owner, agree the details and pay them directly. The price you see is the price the host sets."
-msgstr "Je praat met de eigenaar, maakt de afspraken en betaalt rechtstreeks. De prijs die je ziet, is de prijs die de host vraagt."
-
-msgid "How direct booking works"
-msgstr "Zo werkt direct boeken"

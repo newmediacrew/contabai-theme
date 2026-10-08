@@ -1,3 +1,4 @@
+<?php if (get_option('theme_hero_enabled', '1') === '1') { set_query_var('contabai_overlay_header', true); } ?>
 <?php get_header(); ?>
 
 <?php if (get_option('theme_hero_enabled', '1') === '1') : ?>
@@ -15,17 +16,15 @@
     </section>
 <?php endif; ?>
 
-<?php get_template_part('template-parts/home-islands'); ?>
-
-<?php get_template_part('template-parts/home-band'); ?>
-
 <?php get_template_part('template-parts/home-featured'); ?>
 
 <?php get_template_part('template-parts/home-howitworks'); ?>
 
-<?php get_template_part('template-parts/home-why'); ?>
+<?php get_template_part('template-parts/home-islands'); ?>
 
 <?php get_template_part('template-parts/home-host'); ?>
+
+<?php get_template_part('template-parts/home-why'); ?>
 
 <script>
 (function () {

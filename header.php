@@ -4,6 +4,7 @@ use ContabaiTheme\Heroicon;
 
 $accountUrl = home_url('/' . (defined('CONTABAI_ACCOUNT_PAGE_SLUG') ? CONTABAI_ACCOUNT_PAGE_SLUG : 'contabai-account'));
 $chatUrl    = home_url('/' . (defined('CONTABAI_CHAT_PAGE_SLUG') ? CONTABAI_CHAT_PAGE_SLUG : 'contabai-chat'));
+$isLoggedIn = ! empty($_COOKIE['contabai_sanctum_session_token']);
 
 $brandLogo     = (string) get_option('theme_logo', '');
 $brandName     = get_option('theme_site_name', '') !== '' ? (string) get_option('theme_site_name', '') : get_bloginfo('name');
@@ -11,9 +12,10 @@ $brandPayoff   = (string) get_option('theme_payoff', '');
 $brandShowText = get_option('theme_show_brand_text', '1') === '1';
 $stickyHeader  = get_option('theme_sticky_header', '1') === '1';
 
-$ctaLabel = (string) get_option('theme_cta_label', '');
-$ctaUrl   = (string) get_option('theme_cta_url', '');
+$ctaLabel = trim((string) get_option('theme_cta_label', '')) !== '' ? (string) get_option('theme_cta_label', '') : __('Become a host', 'contabai-theme');
+$ctaUrl   = trim((string) get_option('theme_cta_url', '')) !== '' ? (string) get_option('theme_cta_url', '') : 'https://www.contabai.network';
 $ctaShow  = get_option('theme_cta_enabled', '0') === '1' && $ctaLabel !== '' && $ctaUrl !== '';
+$overlayHeader = (bool) get_query_var('contabai_overlay_header');
 ?>
 <!doctype html>
 <html lang="<?php echo esc_attr(substr(get_locale(), 0, 2)); ?>">   
@@ -26,7 +28,7 @@ $ctaShow  = get_option('theme_cta_enabled', '0') === '1' && $ctaLabel !== '' && 
 
 <?php
 $topbarColumns = [];
-if (get_option('theme_topbar_enabled', '1') === '1') {
+if (get_option('theme_topbar_enabled', '0') === '1') {
     for ($topbarIndex = 1; $topbarIndex <= 4; $topbarIndex++) {
         $topbarTitle = trim((string) get_option('theme_topbar_col' . $topbarIndex . '_title', ''));
         $topbarText = trim((string) get_option('theme_topbar_col' . $topbarIndex . '_text', ''));
@@ -66,7 +68,7 @@ if (get_option('theme_topbar_enabled', '1') === '1') {
 </div>
 <?php endif; ?>
 
-<header class="contabai-header <?php echo $stickyHeader ? 'sticky top-0 ' : ''; ?>z-30 border-b border-neutral-200 bg-white/90 backdrop-blur"
+<header class="contabai-header <?php echo $overlayHeader ? 'contabai-header-overlay ' : ''; ?><?php echo $stickyHeader ? 'sticky top-0 ' : ''; ?>z-30 border-b border-neutral-200 bg-white/90 backdrop-blur"
         x-data="{ scrolled: false }" x-on:scroll.window="scrolled = window.scrollY > 12" x-bind:class="scrolled ? 'is-scrolled' : ''">
     <nav class="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-4 py-2">
         <!-- Brand -->
@@ -79,8 +81,8 @@ if (get_option('theme_topbar_enabled', '1') === '1') {
                 </svg>
             <?php endif; ?>
             <?php if ($brandShowText) : ?>
-                <span class="flex min-w-0 flex-col leading-tight">
-                    <span class="truncate text-lg font-bold text-neutral-900"><?php echo esc_html($brandName); ?></span>
+                <span class="hidden min-w-0 flex-col leading-tight xs:flex">
+                    <span class="contabai-display contabai-header-brand truncate text-xl font-semibold text-neutral-900"><?php echo esc_html($brandName); ?></span>
                 </span>
             <?php endif; ?>
         </a>
@@ -101,22 +103,24 @@ if (get_option('theme_topbar_enabled', '1') === '1') {
 
         <!-- Auth button + mobile menu trigger -->
         <div class="flex shrink-0 items-center gap-2">
+            <?php if ($isLoggedIn) : ?>
             <a href="<?php echo esc_url($chatUrl); ?>" title="<?php esc_attr_e('Chats', 'contabai-theme'); ?>" aria-label="<?php esc_attr_e('Chats', 'contabai-theme'); ?>"
-               class="relative inline-flex items-center justify-center rounded-md p-2 text-neutral-700 no-underline transition hover:bg-neutral-100">
+               class="contabai-header-icon relative inline-flex items-center justify-center rounded-full p-2 text-neutral-700 no-underline transition hover:bg-neutral-100">
                 <?php echo Heroicon::outline('chat-bubble-left-right', 'w-5 h-5'); ?>
                 <span class="js-chat-unread contabai-chat-badge absolute -right-1 -top-1 inline-flex min-w-[1.25rem] items-center justify-center rounded-full px-1.5 py-0.5 text-xs font-semibold leading-none text-white ring-2 ring-white"></span>
             </a>
+            <?php endif; ?>
 
             <?php if ($ctaShow) : ?>
                 <a href="<?php echo esc_url($ctaUrl); ?>" title="<?php echo esc_attr($ctaLabel); ?>" aria-label="<?php echo esc_attr($ctaLabel); ?>"
-                   class="contabai-accent-bg inline-flex items-center gap-2 rounded-md border border-transparent px-2.5 py-2 text-sm font-semibold text-white no-underline transition hover:opacity-90 xl:px-4">
+                   class="contabai-accent-bg inline-flex items-center gap-2 rounded-full border border-transparent px-3 py-2 text-sm font-semibold text-white no-underline transition hover:opacity-90 xl:px-4">
                     <?php echo Heroicon::solid('plus', 'w-4 h-4'); ?>
                     <span class="hidden xl:inline"><?php echo esc_html($ctaLabel); ?></span>
                 </a>
             <?php endif; ?>
 
             <a href="<?php echo esc_url($accountUrl); ?>" title="<?php esc_attr_e('My hub', 'contabai-theme'); ?>"
-               class="inline-flex items-center gap-2 rounded-md border border-neutral-200 px-4 py-2 text-sm font-medium text-neutral-700 no-underline transition hover:bg-neutral-100">
+               class="contabai-header-icon inline-flex items-center gap-2 rounded-full border border-neutral-200 px-4 py-2 text-sm font-medium text-neutral-700 no-underline transition hover:bg-neutral-100">
                 <?php echo Heroicon::solid('user-circle', 'w-4 h-4'); ?>
                 <span class="hidden sm:inline"><?php esc_html_e('My hub', 'contabai-theme'); ?></span>
             </a>
@@ -125,6 +129,21 @@ if (get_option('theme_topbar_enabled', '1') === '1') {
         </div>
     </nav>
 </header>
+<?php if ($overlayHeader) : ?>
+<script>
+(function () {
+    const header = document.querySelector('.contabai-header-overlay');
+    if (! header) { return; }
+    const measure = function () {
+        if (! header.classList.contains('is-scrolled')) {
+            document.documentElement.style.setProperty('--contabai-header-h', header.offsetHeight + 'px');
+        }
+    };
+    measure();
+    window.addEventListener('resize', measure);
+})();
+</script>
+<?php endif; ?>
 
 <script>
 // Runs after Alpine finishes (incl. x-teleport), so #mobile-menu exists in its teleported spot.

@@ -1,8 +1,10 @@
 <?php use ContabaiTheme\Heroicon; ?>
+<?php set_query_var('contabai_overlay_header', true); ?>
 <?php get_header(); ?>
-<div class="mx-auto max-w-7xl px-4 py-10">
-    <?php while (have_posts()) : the_post(); ?>
-        <?php $categories = get_the_category(); ?>
+<?php while (have_posts()) : the_post(); ?>
+    <?php $categories = get_the_category(); ?>
+    <article itemscope itemtype="https://schema.org/Article">
+        <?php ob_start(); ?>
         <?php if (get_option('theme_breadcrumbs_enabled', '1') === '1') : ?>
         <nav aria-label="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"
              class="no-scrollbar mb-6 flex items-center gap-1 overflow-x-auto text-sm text-neutral-500">
@@ -25,8 +27,17 @@
             </span>
         </nav>
         <?php endif; ?>
-
-        <article itemscope itemtype="https://schema.org/Article">
+        <?php
+        $crumbs = (string) ob_get_clean();
+        get_template_part('template-parts/photo-hero', null, [
+            'image'      => \ContabaiTheme\PhotoHero::image(get_the_ID()),
+            'title'      => get_the_title(),
+            'title_attr' => ' itemprop="headline"',
+            'eyebrow'    => implode(' · ', array_filter([! empty($categories) ? $categories[0]->name : '', get_the_date()])),
+            'crumbs'     => $crumbs,
+        ]);
+        ?>
+        <div class="mx-auto max-w-7xl px-4 py-10">
             <div class="entry-content" itemprop="articleBody"><?php the_content(); ?></div>
 
             <?php if (! empty($categories)) : ?>
@@ -43,7 +54,7 @@
                     </div>
                 </footer>
             <?php endif; ?>
-        </article>
-    <?php endwhile; ?>
-</div>
+        </div>
+    </article>
+<?php endwhile; ?>
 <?php get_footer(); ?>

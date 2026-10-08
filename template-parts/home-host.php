@@ -4,7 +4,7 @@ use ContabaiTheme\Heroicon;
 
 $hostImage = get_template_directory_uri() . '/assets/img/host.webp';
 $ctaLabel  = trim((string) get_option('theme_cta_label', '')) !== '' ? (string) get_option('theme_cta_label', '') : __('Become a host', 'contabai-theme');
-$ctaUrl    = trim((string) get_option('theme_cta_url', '')) !== '' ? (string) get_option('theme_cta_url', '') : home_url('/');
+$ctaUrl    = trim((string) get_option('theme_cta_url', '')) !== '' ? (string) get_option('theme_cta_url', '') : 'https://www.contabai.network';
 ?>
 <section class="contabai-wave-both relative isolate overflow-hidden">
     <img src="<?php echo esc_url($hostImage); ?>" alt="" width="1920" height="760" loading="lazy" decoding="async" class="absolute inset-0 -z-10 h-full w-full object-cover" />
