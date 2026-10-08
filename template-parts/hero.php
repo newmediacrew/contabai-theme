@@ -50,6 +50,7 @@ if (! in_array($heroAnim, ['zoom-in', 'zoom-out', 'pan-left', 'pan-right', 'pan-
         <?php endforeach; ?>
     </div>
     <div class="contabai-hero-overlay"></div>
+    <div class="contabai-hero-glow" aria-hidden="true"></div>
     <div class="contabai-hero-inner mx-auto w-full max-w-7xl px-4">
         <?php if ($heroEyebrow !== '') : ?>
             <div class="contabai-hero-eyebrow"><?php echo esc_html($heroEyebrow); ?></div>
@@ -71,6 +72,7 @@ if (! in_array($heroAnim, ['zoom-in', 'zoom-out', 'pan-left', 'pan-right', 'pan-
             <div class="contabai-hero-search"><?php echo do_shortcode('[contabai_search]'); ?></div>
         <?php endif; ?>
     </div>
+    <span class="contabai-hero-cue" aria-hidden="true"><?php echo Heroicon::outline('chevron-down', 'w-6 h-6'); ?></span>
 </section>
 <script>
 (function () {

@@ -14,12 +14,29 @@ add_action('after_setup_theme', function () {
     load_theme_textdomain('contabai-theme', get_template_directory() . '/languages');
 });
 
+add_action('after_switch_theme', function () {
+    foreach ([
+        'theme_color_schema'        => '#b51a00',
+        'theme_link_color'          => '#b51a00',
+        'theme_font_schema'         => 'DM Sans',
+        'theme_heading_font'        => 'Playfair Display',
+        'theme_heading_weight'      => '500',
+        'theme_heading_line_height' => '1.1',
+        'theme_heading_color'       => '#1d1a17',
+        'theme_body_text_color'     => '#3a332d',
+        'theme_bg_type'             => 'color',
+        'theme_bg_color'            => '#f7f1e8',
+    ] as $option => $value) {
+        add_option($option, $value);
+    }
+});
+
 add_action('init', function () {
     register_nav_menus(['header_navigation' => esc_html__('Header navigation', 'contabai-theme')]);
 });
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('contabai-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '56');
+    wp_enqueue_style('contabai-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '58');
 });
 
 add_action('wp_head', function () {
