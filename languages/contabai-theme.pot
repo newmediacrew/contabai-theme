@@ -1,0 +1,661 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: contabai-theme\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "100% width"
+msgstr ""
+
+msgid "404 Oops"
+msgstr ""
+
+msgid "A fresh pick of homes and villas from across the catalogue — every one booked direct with the host."
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "Agree the price and pay the host directly — we never touch the money or step into your booking."
+msgstr ""
+
+msgid "All destinations"
+msgstr ""
+
+msgid "Always"
+msgstr ""
+
+msgid "Angled soft"
+msgstr ""
+
+msgid "Are you a host somewhere else? Tell us where you host and we’ll bring direct booking to your corner of the world."
+msgstr ""
+
+msgid "Area"
+msgstr ""
+
+msgid "Aruba"
+msgstr ""
+
+msgid "Ask anything and agree the details straight with the owner — real answers from the person who knows the place best."
+msgstr ""
+
+msgid "Auto"
+msgstr ""
+
+msgid "Back to home"
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+msgid "Background animation"
+msgstr ""
+
+msgid "Badge 1 icon"
+msgstr ""
+
+msgid "Badge 1 icon color"
+msgstr ""
+
+msgid "Badge 1 text"
+msgstr ""
+
+msgid "Badge 2 icon"
+msgstr ""
+
+msgid "Badge 2 icon color"
+msgstr ""
+
+msgid "Badge 2 text"
+msgstr ""
+
+msgid "Badge 3 icon"
+msgstr ""
+
+msgid "Badge 3 icon color"
+msgstr ""
+
+msgid "Badge 3 text"
+msgstr ""
+
+msgid "Base font size"
+msgstr ""
+
+msgid "Become a host"
+msgstr ""
+
+msgid "Body font"
+msgstr ""
+
+msgid "Body text color"
+msgstr ""
+
+msgid "Bold"
+msgstr ""
+
+msgid "Bold, italic and links are kept; the top bar is a single line, so paragraphs and lists are not."
+msgstr ""
+
+msgid "Bonaire"
+msgstr ""
+
+msgid "Book direct"
+msgstr ""
+
+msgid "Book in three steps"
+msgstr ""
+
+msgid "Bottom center"
+msgstr ""
+
+msgid "Bottom left"
+msgstr ""
+
+msgid "Bottom right"
+msgstr ""
+
+msgid "Bottom to top"
+msgstr ""
+
+msgid "Branding"
+msgstr ""
+
+msgid "Breadcrumbs"
+msgstr ""
+
+msgid "Breathe"
+msgstr ""
+
+msgid "Browse all listings"
+msgstr ""
+
+msgid "Built to cut out the middleman"
+msgstr ""
+
+msgid "CTA URL"
+msgstr ""
+
+msgid "CTA label"
+msgstr ""
+
+msgid "Call-to-action button"
+msgstr ""
+
+msgid "Center"
+msgstr ""
+
+msgid "Chats"
+msgstr ""
+
+msgid "Choose file"
+msgstr ""
+
+msgid "City"
+msgstr ""
+
+msgid "Classic editor"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "Column %d icon"
+msgstr ""
+
+msgid "Column %d icon color"
+msgstr ""
+
+msgid "Column %d text"
+msgstr ""
+
+msgid "Column %d title"
+msgstr ""
+
+msgid "Contabai Theme"
+msgstr ""
+
+msgid "Contain"
+msgstr ""
+
+msgid "Content opacity"
+msgstr ""
+
+msgid "Country"
+msgstr ""
+
+msgid "Cover"
+msgstr ""
+
+msgid "Crossfade only"
+msgstr ""
+
+msgid "Curaçao"
+msgstr ""
+
+msgid "Diagonal"
+msgstr ""
+
+msgid "Diagonal drift"
+msgstr ""
+
+msgid "Direct contact"
+msgstr ""
+
+msgid "Dual tone"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Extra bold"
+msgstr ""
+
+msgid "Eyebrow"
+msgstr ""
+
+msgid "Eyebrow color"
+msgstr ""
+
+msgid "Facebook"
+msgstr ""
+
+msgid "Fairer prices"
+msgstr ""
+
+msgid "Footer"
+msgstr ""
+
+msgid "From snug studios to grand villas — room for couples, families and groups."
+msgstr ""
+
+msgid "Gradient"
+msgstr ""
+
+msgid "Handpicked"
+msgstr ""
+
+msgid "Header navigation"
+msgstr ""
+
+msgid "Heading"
+msgstr ""
+
+msgid "Heading color"
+msgstr ""
+
+msgid "Heading font"
+msgstr ""
+
+msgid "Heading line height"
+msgstr ""
+
+msgid "Heading weight"
+msgstr ""
+
+msgid "Hero"
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "Homes and villas from the Dutch Caribbean to the rest of the world."
+msgstr ""
+
+msgid "Hosts keep more"
+msgstr ""
+
+msgid "I would like to host on Mitabon."
+msgstr ""
+
+msgid "Image"
+msgstr ""
+
+msgid "Instagram"
+msgstr ""
+
+msgid "Ken Burns — zoom in"
+msgstr ""
+
+msgid "Ken Burns — zoom out"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Left center"
+msgstr ""
+
+msgid "Left to right"
+msgstr ""
+
+msgid "Line height"
+msgstr ""
+
+msgid "Link color"
+msgstr ""
+
+msgid "Link underline"
+msgstr ""
+
+msgid "LinkedIn"
+msgstr ""
+
+msgid "List it on Mitabon — keep what you earn"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Mesh subtle"
+msgstr ""
+
+msgid "Message hosts directly for honest answers and local tips."
+msgstr ""
+
+msgid "Message the host"
+msgstr ""
+
+msgid "Messaging a host and booking need a free, verified account — a quick sign-up keeps guests and hosts safe."
+msgstr ""
+
+msgid "More of what you pay reaches the person hosting you."
+msgstr ""
+
+msgid "My hub"
+msgstr ""
+
+msgid "New destination request"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "No booking fees"
+msgstr ""
+
+msgid "No middleman markup baked into the nightly rate."
+msgstr ""
+
+msgid "No platform commission"
+msgstr ""
+
+msgid "No posts found in this category."
+msgstr ""
+
+msgid "No repeat"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Normal"
+msgstr ""
+
+msgid "Not a cent is skimmed off your booking."
+msgstr ""
+
+msgid "Not on the map yet?"
+msgstr ""
+
+msgid "On hover"
+msgstr ""
+
+msgid "Our first islands"
+msgstr ""
+
+msgid "Overlay color"
+msgstr ""
+
+msgid "Overlay opacity"
+msgstr ""
+
+msgid "Own a place?"
+msgstr ""
+
+msgid "Page not found."
+msgstr ""
+
+msgid "Pan down"
+msgstr ""
+
+msgid "Pan left"
+msgstr ""
+
+msgid "Pan right"
+msgstr ""
+
+msgid "Pan up"
+msgstr ""
+
+msgid "Paragraph spacing"
+msgstr ""
+
+msgid "Payoff"
+msgstr ""
+
+msgid "Position"
+msgstr ""
+
+msgid "Powered by Contabai"
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Privacy"
+msgstr ""
+
+msgid "Privacy policy"
+msgstr ""
+
+msgid "Privacy statement"
+msgstr ""
+
+msgid "Radial"
+msgstr ""
+
+msgid "Reach travellers worldwide and book them direct. No commission on the stay, no middleman between you and your guests — you set the price and keep what you earn."
+msgstr ""
+
+msgid "Relaxed"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Repeat"
+msgstr ""
+
+msgid "Repeat all"
+msgstr ""
+
+msgid "Repeat horizontal"
+msgstr ""
+
+msgid "Repeat vertical"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Right center"
+msgstr ""
+
+msgid "Search & discover"
+msgstr ""
+
+msgid "Semibold"
+msgstr ""
+
+msgid "Settings saved."
+msgstr ""
+
+msgid "Show brand text"
+msgstr ""
+
+msgid "Show hero on homepage"
+msgstr ""
+
+msgid "Show top bar"
+msgstr ""
+
+msgid "Showing %1$s to %2$s of %3$s results"
+msgstr ""
+
+msgid "Shown in a pop-up from the footer link."
+msgstr ""
+
+msgid "Simple by design"
+msgstr ""
+
+msgid "Site name"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Socials"
+msgstr ""
+
+msgid "Soft fade"
+msgstr ""
+
+msgid "Static (no motion)"
+msgstr ""
+
+msgid "Stays for everyone"
+msgstr ""
+
+msgid "Stays worth the trip"
+msgstr ""
+
+msgid "Sticky header"
+msgstr ""
+
+msgid "Subheading"
+msgstr ""
+
+msgid "Subheading color"
+msgstr ""
+
+msgid "Suggest your destination"
+msgstr ""
+
+msgid "Tell us where, when and with how many. Filter by type, price and amenities."
+msgstr ""
+
+msgid "Terms"
+msgstr ""
+
+msgid "Terms of service"
+msgstr ""
+
+msgid "Terms statement"
+msgstr ""
+
+msgid "Text alignment"
+msgstr ""
+
+msgid "Text color"
+msgstr ""
+
+msgid "The big rental platforms take a cut of nearly every booking — often around 15%. That money has to come from somewhere: a higher price for you, and less for the host who actually welcomes you in."
+msgstr ""
+
+msgid "The price you see is the price you pay — nothing added at checkout."
+msgstr ""
+
+msgid "Theme color"
+msgstr ""
+
+msgid "Three stop"
+msgstr ""
+
+msgid "Tight"
+msgstr ""
+
+msgid "TikTok"
+msgstr ""
+
+msgid "Top bar"
+msgstr ""
+
+msgid "Top center"
+msgstr ""
+
+msgid "Top left"
+msgstr ""
+
+msgid "Top right"
+msgstr ""
+
+msgid "Top to bottom"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Typography"
+msgstr ""
+
+msgid "We are starting close to home, in the Dutch Caribbean — and rolling out worldwide from there."
+msgstr ""
+
+msgid "We were tired of watching that. So Mitabon works the other way round — you book straight with the host, the money never passes through us, and no platform commission inflates the price. Fair for you, fair for the people who open their doors."
+msgstr ""
+
+msgid "Where it all starts"
+msgstr ""
+
+msgid "Why Mitabon"
+msgstr ""
+
+msgid "Worldwide selection"
+msgstr ""
+
+msgid "X"
+msgstr ""
+
+msgid "YouTube"
+msgstr ""
+
+msgid "Updates"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Installed version"
+msgstr ""
+
+msgid "Latest release"
+msgstr ""
+
+msgid "Update available"
+msgstr ""
+
+msgid "Last check"
+msgstr ""
+
+msgid "Never"
+msgstr ""
+
+msgid "Last error"
+msgstr ""
+
+msgid "Check now"
+msgstr ""
+
+msgid "Release notes"
+msgstr ""
+
+
+
+#, php-format
+msgid "GitHub is not reachable: %s"
+msgstr ""
+
+msgid "GitHub refused the request (rate limit). Try again later."
+msgstr ""
+
+msgid "No release published yet."
+msgstr ""
+
+#, php-format
+msgid "GitHub answered with HTTP %d."
+msgstr ""
+
+msgid "GitHub sent an unexpected answer."
+msgstr ""
+
+#, php-format
+msgid "Release tag %s is not a valid version."
+msgstr ""
+
+#, php-format
+msgid "Release %1$s has no %2$s."
+msgstr ""
+
+msgid "You are not allowed to do this."
+msgstr ""
+
+msgid "Development mode"
+msgstr ""
+
+msgid "Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production."
+msgstr ""
+
+msgid "Development mode is on, so this update is not installed."
+msgstr ""
+
+msgid "Development mode is on (Advanced tab), so updates are switched off."
+msgstr ""
