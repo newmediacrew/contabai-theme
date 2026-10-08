@@ -731,3 +731,15 @@ msgstr "Der Entwicklungsmodus ist an (Tab Erweitert), daher sind Updates ausgesc
 
 msgid "Section eyebrow color"
 msgstr "Kennzeilenfarbe der Abschnitte"
+
+msgid "Golden hour, your own pool"
+msgstr "Goldene Stunde, dein eigener Pool"
+
+msgid "Nobody in between you and the view."
+msgstr "Niemand zwischen dir und der Aussicht."
+
+msgid "You talk to the owner, agree the details and pay them directly. The price you see is the price the host sets."
+msgstr "Du sprichst mit dem Eigentümer, klärst die Details und bezahlst direkt. Der Preis, den du siehst, ist der Preis, den der Gastgeber festlegt."
+
+msgid "How direct booking works"
+msgstr "So funktioniert direktes Buchen"

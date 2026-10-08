@@ -6,12 +6,12 @@ $steps = [
     ['title' => __('Book direct', 'contabai-theme'),        'text' => __('Agree the price and pay the host directly — we never touch the money or step into your booking.', 'contabai-theme')],
 ];
 ?>
-<section class="mx-auto w-full max-w-7xl px-4 py-16 sm:py-20">
-    <div class="max-w-2xl">
+<section id="how-it-works" class="mx-auto w-full max-w-7xl scroll-mt-24 px-4 py-16 sm:py-20">
+    <div class="contabai-reveal max-w-2xl">
         <p class="contabai-eyebrow text-sm font-semibold uppercase tracking-wide"><?php echo esc_html__('Simple by design', 'contabai-theme'); ?></p>
         <h2 class="contabai-heading mt-2 text-3xl text-[color:var(--heading-color,#111827)] sm:text-4xl"><?php echo esc_html__('Book in three steps', 'contabai-theme'); ?></h2>
     </div>
-    <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
+    <div class="contabai-reveal mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
         <?php foreach ($steps as $i => $step) : ?>
             <div class="flex gap-4">
                 <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[color:var(--theme-color,#ff5400)] text-lg font-bold text-white"><?php echo esc_html((string) ($i + 1)); ?></div>

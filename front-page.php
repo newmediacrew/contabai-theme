@@ -17,6 +17,8 @@
 
 <?php get_template_part('template-parts/home-islands'); ?>
 
+<?php get_template_part('template-parts/home-band'); ?>
+
 <?php get_template_part('template-parts/home-featured'); ?>
 
 <?php get_template_part('template-parts/home-howitworks'); ?>
@@ -24,5 +26,19 @@
 <?php get_template_part('template-parts/home-why'); ?>
 
 <?php get_template_part('template-parts/home-host'); ?>
+
+<script>
+(function () {
+    if (! ('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) { return; }
+    const items = document.querySelectorAll('.contabai-reveal');
+    document.documentElement.classList.add('contabai-reveal-on');
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+        });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    items.forEach(function (item) { observer.observe(item); });
+})();
+</script>
 
 <?php get_footer(); ?>

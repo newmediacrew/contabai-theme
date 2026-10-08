@@ -17,6 +17,14 @@
 .contabai-accent-bg { background: var(--theme-color, #ff5400); }
 .contabai-eyebrow { color: var(--eyebrow-color, #8f5320); }
 .contabai-eyebrow-on-dark { color: var(--hero-eyebrow-color, #ffd9c9); }
+.contabai-display { font-family: var(--theme-heading-font, var(--theme-font)), system-ui, sans-serif; }
+.contabai-wave-both {
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 70' preserveAspectRatio='none'%3E%3Cpath d='M0 70V38C240 4 480 0 720 28C960 56 1200 64 1440 30V70Z'/%3E%3C/svg%3E") top / 100% 70px no-repeat, linear-gradient(#000 0 0) center / 100% calc(100% - 138px) no-repeat, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 70' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V36C1200 66 960 62 720 36C480 10 240 14 0 40Z'/%3E%3C/svg%3E") bottom / 100% 70px no-repeat;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 70' preserveAspectRatio='none'%3E%3Cpath d='M0 70V38C240 4 480 0 720 28C960 56 1200 64 1440 30V70Z'/%3E%3C/svg%3E") top / 100% 70px no-repeat, linear-gradient(#000 0 0) center / 100% calc(100% - 138px) no-repeat, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 70' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V36C1200 66 960 62 720 36C480 10 240 14 0 40Z'/%3E%3C/svg%3E") bottom / 100% 70px no-repeat;
+}
+.contabai-band-overlay { background: linear-gradient(90deg, rgba(15, 23, 30, .82) 0%, rgba(15, 23, 30, .45) 55%, rgba(15, 23, 30, .1) 100%); }
+.contabai-reveal-on .contabai-reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1); }
+.contabai-reveal-on .contabai-reveal.is-visible { opacity: 1; transform: none; }
 .contabai-chat-badge { background: var(--theme-color, #ff5400); display: none; }
 .contabai-topbar { background: var(--topbar-bg, #1f2d3d); color: var(--topbar-text, #fff); }
 .contabai-topbar-inner { background: var(--topbar-bg, #1f2d3d); }

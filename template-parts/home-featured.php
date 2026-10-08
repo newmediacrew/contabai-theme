@@ -5,8 +5,8 @@ use ContabaiTheme\Heroicon;
 $listingsPage = get_page_by_path('contabai-listings');
 $listingsUrl  = $listingsPage ? get_permalink($listingsPage) : home_url('/contabai-listings/');
 ?>
-<section class="bg-neutral-50 py-16 sm:py-20">
-    <div class="mx-auto max-w-7xl px-4">
+<section class="py-16 sm:py-20">
+    <div class="contabai-reveal mx-auto max-w-7xl px-4">
         <div class="flex flex-wrap items-end justify-between gap-4">
             <div class="max-w-2xl">
                 <p class="contabai-eyebrow text-sm font-semibold uppercase tracking-wide"><?php echo esc_html__('Handpicked', 'contabai-theme'); ?></p>

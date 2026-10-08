@@ -10,7 +10,7 @@ $islands = [
 ?>
 <section class="mx-auto w-full max-w-7xl px-4 py-16 sm:py-20">
     <?php $listingsPage = get_page_by_path('contabai-listings'); $listingsUrl = $listingsPage ? get_permalink($listingsPage) : home_url('/contabai-listings/'); ?>
-    <div class="flex flex-wrap items-end justify-between gap-4">
+    <div class="contabai-reveal flex flex-wrap items-end justify-between gap-4">
         <div class="max-w-2xl">
             <p class="contabai-eyebrow text-sm font-semibold uppercase tracking-wide"><?php echo esc_html__('Where it all starts', 'contabai-theme'); ?></p>
             <h2 class="contabai-heading mt-2 text-3xl text-[color:var(--heading-color,#111827)] sm:text-4xl"><?php echo esc_html__('Our first islands', 'contabai-theme'); ?></h2>
@@ -18,7 +18,7 @@ $islands = [
         </div>
         <a href="<?php echo esc_url($listingsUrl); ?>" class="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-sm font-semibold text-[color:var(--content-link-color,#ff5400)] contabai-link transition hover:opacity-80"><?php echo esc_html__('All destinations', 'contabai-theme'); ?><?php echo Heroicon::solid('chevron-right', 'w-4 h-4'); ?></a>
     </div>
-    <div class="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-rows-2 lg:h-[36rem]">
+    <div class="contabai-reveal mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-rows-2 lg:h-[36rem]">
         <?php foreach ($islands as $i => $island) :
             $page = get_page_by_path($island['slug']);
             $url  = $page ? get_permalink($page) : home_url('/' . $island['slug'] . '/');
@@ -27,18 +27,18 @@ $islands = [
                 ? 'col-span-2 aspect-[16/10] lg:col-span-1 lg:row-span-2 lg:aspect-auto lg:h-full'
                 : 'col-span-1 aspect-[4/3] lg:aspect-auto lg:h-full';
         ?>
-            <a href="<?php echo esc_url($url); ?>" class="group relative block overflow-hidden rounded-2xl shadow-sm ring-1 ring-neutral-200 transition hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--theme-color,#ff5400)] <?php echo $cardClass; ?>">
+            <a href="<?php echo esc_url($url); ?>" class="group relative block overflow-hidden rounded-3xl shadow-sm ring-1 ring-neutral-200 transition hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--theme-color,#ff5400)] <?php echo $cardClass; ?>">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/islands/' . $island['img']); ?>" alt="<?php echo esc_attr($island['name']); ?>" width="1200" height="900" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" />
                 <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 p-4 sm:p-5">
-                    <span class="text-lg font-semibold text-white sm:text-2xl <?php echo $big ? 'lg:text-3xl' : ''; ?>"><?php echo esc_html($island['name']); ?></span>
+                    <span class="contabai-display text-lg font-semibold text-white sm:text-2xl <?php echo $big ? 'lg:text-3xl' : ''; ?>"><?php echo esc_html($island['name']); ?></span>
                     <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition group-hover:bg-[color:var(--theme-color,#ff5400)]"><?php echo Heroicon::solid('arrow-right', 'w-5 h-5'); ?></span>
                 </div>
             </a>
         <?php endforeach; ?>
     </div>
 
-    <div class="mt-10 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 sm:p-8">
+    <div class="contabai-reveal mt-10 rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8">
         <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div class="max-w-xl">
                 <h3 class="text-xl font-bold text-neutral-900 sm:text-2xl"><?php echo esc_html__('Not on the map yet?', 'contabai-theme'); ?></h3>

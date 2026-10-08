@@ -8,8 +8,8 @@ $points = [
     ['icon' => 'home-modern', 'title' => __('Hosts keep more', 'contabai-theme'),         'text' => __('More of what you pay reaches the person hosting you.', 'contabai-theme')],
 ];
 ?>
-<section class="contabai-why-bg py-16 sm:py-20">
-    <div class="mx-auto max-w-7xl px-4">
+<section class="contabai-why-bg contabai-wave-both py-28 sm:py-32">
+    <div class="contabai-reveal mx-auto max-w-7xl px-4">
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
             <div class="max-w-xl">
                 <p class="contabai-eyebrow-on-dark text-sm font-semibold uppercase tracking-wide"><?php echo esc_html__('Why Mitabon', 'contabai-theme'); ?></p>
