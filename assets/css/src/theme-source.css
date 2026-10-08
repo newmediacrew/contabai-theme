@@ -15,6 +15,8 @@
 .no-scrollbar::-webkit-scrollbar { display: none; }
 
 .contabai-accent-bg { background: var(--theme-color, #ff5400); }
+.contabai-eyebrow { color: var(--eyebrow-color, #8f5320); }
+.contabai-eyebrow-on-dark { color: var(--hero-eyebrow-color, #ffd9c9); }
 .contabai-chat-badge { background: var(--theme-color, #ff5400); display: none; }
 .contabai-topbar { background: var(--topbar-bg, #1f2d3d); color: var(--topbar-text, #fff); }
 .contabai-topbar-inner { background: var(--topbar-bg, #1f2d3d); }

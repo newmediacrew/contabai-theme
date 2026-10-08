@@ -728,3 +728,6 @@ msgstr "De ontwikkelmodus staat aan, dus deze update wordt niet geïnstalleerd."
 
 msgid "Development mode is on (Advanced tab), so updates are switched off."
 msgstr "De ontwikkelmodus staat aan (tabblad Geavanceerd), dus updates zijn uitgeschakeld."
+
+msgid "Section eyebrow color"
+msgstr "Bovenkopkleur secties"

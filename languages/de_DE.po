@@ -728,3 +728,6 @@ msgstr "Der Entwicklungsmodus ist an, daher wird dieses Update nicht installiert
 
 msgid "Development mode is on (Advanced tab), so updates are switched off."
 msgstr "Der Entwicklungsmodus ist an (Tab Erweitert), daher sind Updates ausgeschaltet."
+
+msgid "Section eyebrow color"
+msgstr "Kennzeilenfarbe der Abschnitte"

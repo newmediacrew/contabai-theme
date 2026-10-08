@@ -12,7 +12,7 @@ $islands = [
     <?php $listingsPage = get_page_by_path('contabai-listings'); $listingsUrl = $listingsPage ? get_permalink($listingsPage) : home_url('/contabai-listings/'); ?>
     <div class="flex flex-wrap items-end justify-between gap-4">
         <div class="max-w-2xl">
-            <p class="text-sm font-semibold uppercase tracking-wide text-[color:var(--theme-color,#ff5400)]"><?php echo esc_html__('Where it all starts', 'contabai-theme'); ?></p>
+            <p class="contabai-eyebrow text-sm font-semibold uppercase tracking-wide"><?php echo esc_html__('Where it all starts', 'contabai-theme'); ?></p>
             <h2 class="contabai-heading mt-2 text-3xl text-[color:var(--heading-color,#111827)] sm:text-4xl"><?php echo esc_html__('Our first islands', 'contabai-theme'); ?></h2>
             <p class="contabai-body mb-[var(--content-paragraph-spacing)] mt-3 text-base text-[color:var(--content-text-color,#374151)]"><?php echo esc_html__('We are starting close to home, in the Dutch Caribbean — and rolling out worldwide from there.', 'contabai-theme'); ?></p>
         </div>

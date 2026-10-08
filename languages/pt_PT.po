@@ -706,3 +706,6 @@ msgstr "O modo de desenvolvimento está ativo, por isso esta atualização não 
 
 msgid "Development mode is on (Advanced tab), so updates are switched off."
 msgstr "O modo de desenvolvimento está ativo (separador Avançado), por isso as atualizações estão desativadas."
+
+msgid "Section eyebrow color"
+msgstr "Cor do sobretítulo das secções"

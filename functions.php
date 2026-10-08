@@ -36,7 +36,7 @@ add_action('init', function () {
 });
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('contabai-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '58');
+    wp_enqueue_style('contabai-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '59');
 });
 
 add_action('wp_head', function () {

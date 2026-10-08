@@ -659,3 +659,6 @@ msgstr ""
 
 msgid "Development mode is on (Advanced tab), so updates are switched off."
 msgstr ""
+
+msgid "Section eyebrow color"
+msgstr ""

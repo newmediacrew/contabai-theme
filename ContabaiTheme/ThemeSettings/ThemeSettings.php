@@ -143,6 +143,7 @@ class ThemeSettings
             ['theme_heading_weight', __('Heading weight', 'contabai-theme'), 'heading_weight', '700', 'typography'],
             ['theme_heading_line_height', __('Heading line height', 'contabai-theme'), 'heading_line_height', '1.2', 'typography'],
             ['theme_heading_color', __('Heading color', 'contabai-theme'), 'color', '#111827', 'typography'],
+            ['theme_eyebrow_color', __('Section eyebrow color', 'contabai-theme'), 'color', '#8f5320', 'typography'],
             ['theme_link_color', __('Link color', 'contabai-theme'), 'color', '#ff5400', 'typography'],
             ['theme_link_underline', __('Link underline', 'contabai-theme'), 'link_underline', 'always', 'typography'],
 
@@ -726,6 +727,7 @@ class ThemeSettings
         $bodyTextColor = esc_attr(get_option('theme_body_text_color', '#374151')) ?: '#374151';
         $headingColor = esc_attr(get_option('theme_heading_color', '#111827')) ?: '#111827';
         $linkColor = esc_attr(get_option('theme_link_color', '#ff5400')) ?: '#ff5400';
+        $eyebrowColor = esc_attr(get_option('theme_eyebrow_color', '#8f5320')) ?: '#8f5320';
 
         $baseFontSize = (string) get_option('theme_base_font_size', '16');
         if (! in_array($baseFontSize, ['14', '15', '16', '17', '18'], true)) {
@@ -832,6 +834,7 @@ class ThemeSettings
             --heading-weight: ' . $headingWeight . ';
             --heading-line-height: ' . $headingLineHeight . ';
             --heading-color: ' . $headingColor . ';
+            --eyebrow-color: ' . $eyebrowColor . ';
             --content-link-color: ' . $linkColor . ';
             --logo-height: ' . $logoHeight . 'px;
         }

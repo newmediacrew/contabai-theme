@@ -8,7 +8,7 @@ $steps = [
 ?>
 <section class="mx-auto w-full max-w-7xl px-4 py-16 sm:py-20">
     <div class="max-w-2xl">
-        <p class="text-sm font-semibold uppercase tracking-wide text-[color:var(--theme-color,#ff5400)]"><?php echo esc_html__('Simple by design', 'contabai-theme'); ?></p>
+        <p class="contabai-eyebrow text-sm font-semibold uppercase tracking-wide"><?php echo esc_html__('Simple by design', 'contabai-theme'); ?></p>
         <h2 class="contabai-heading mt-2 text-3xl text-[color:var(--heading-color,#111827)] sm:text-4xl"><?php echo esc_html__('Book in three steps', 'contabai-theme'); ?></h2>
     </div>
     <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-10">
