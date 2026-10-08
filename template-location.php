@@ -29,7 +29,7 @@ get_header();
     <div class="contabai-photo-body"><?php the_content(); ?></div>
     <?php if ($generated) : ?>
         <?php
-        echo AiSeoRenderer::content($id);
+        echo AiSeoRenderer::content($id, \ContabaiTheme\PhotoHero::image(0));
         echo AiSeoRenderer::related($id);
         echo AiSeoRenderer::jsonld($id);
         ?>
