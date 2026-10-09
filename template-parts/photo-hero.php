@@ -1,6 +1,5 @@
 <?php
 $heroImage   = (string) ($args['image'] ?? '');
-$heroAlt     = (string) ($args['alt'] ?? '');
 $heroTitle   = (string) ($args['title'] ?? '');
 $heroTag     = ($args['tag'] ?? 'h1') === 'p' ? 'p' : 'h1';
 $heroAttr    = (string) ($args['title_attr'] ?? '');
@@ -11,7 +10,7 @@ $heroSize    = ($args['size'] ?? '') === 'xl' ? ' is-xl' : '';
 ?>
 <section class="contabai-photo-hero">
     <?php if ($heroImage !== '') : ?>
-        <img src="<?php echo esc_url($heroImage); ?>" alt="<?php echo esc_attr($heroAlt); ?>" fetchpriority="high" decoding="async" class="contabai-photo-hero-img" />
+        <img src="<?php echo esc_url($heroImage); ?>" alt="" fetchpriority="high" decoding="async" class="contabai-photo-hero-img" />
     <?php endif; ?>
     <div class="contabai-photo-hero-inner mx-auto w-full max-w-7xl px-4">
         <?php echo $heroCrumbs; ?>
