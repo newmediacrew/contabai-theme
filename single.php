@@ -31,6 +31,7 @@
         $crumbs = (string) ob_get_clean();
         get_template_part('template-parts/photo-hero', null, [
             'image'      => \ContabaiTheme\PhotoHero::image(get_the_ID()),
+            'alt'        => \ContabaiTheme\PhotoHero::alt(get_the_ID()),
             'title'      => get_the_title(),
             'title_attr' => ' itemprop="headline"',
             'eyebrow'    => implode(' · ', array_filter([! empty($categories) ? $categories[0]->name : '', get_the_date()])),

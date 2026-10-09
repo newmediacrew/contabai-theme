@@ -20,6 +20,7 @@ if ($overlay) {
         <?php
         get_template_part('template-parts/photo-hero', null, [
             'image' => \ContabaiTheme\PhotoHero::image(get_the_ID()),
+            'alt'   => \ContabaiTheme\PhotoHero::alt(get_the_ID()),
             'title' => get_the_title(),
         ]);
         ?>
