@@ -19,6 +19,7 @@ get_header();
 
     get_template_part('template-parts/photo-hero', null, [
         'image'    => \ContabaiTheme\PhotoHero::image($id),
+        'alt'      => \ContabaiTheme\PhotoHero::alt($id),
         'title'    => get_the_title(),
         'tag'      => $generated ? 'p' : 'h1',
         'subtitle' => (! $generated && has_excerpt()) ? get_the_excerpt() : '',
