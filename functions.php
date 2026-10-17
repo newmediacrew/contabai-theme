@@ -20,6 +20,35 @@ add_action('after_switch_theme', function () {
     }
 });
 
+$legalPages = function () {
+    if (get_option('theme_legal_pages') !== false) {
+        return;
+    }
+
+    $pages = [
+        'privacy' => [__('Privacy policy', 'contabai-theme'), (string) get_option('theme_privacy', '')],
+        'terms'   => [__('Terms of service', 'contabai-theme'), (string) get_option('theme_terms', '')],
+    ];
+    $ids = [];
+    foreach ($pages as $slug => [$title, $content]) {
+        $page = get_page_by_path($slug);
+        $ids[$slug] = $page ? $page->ID : wp_insert_post([
+            'post_type'    => 'page',
+            'post_name'    => $slug,
+            'post_title'   => $title,
+            'post_content' => $content,
+            'post_status'  => $content !== '' ? 'publish' : 'draft',
+        ]);
+    }
+
+    if (! (int) get_option('wp_page_for_privacy_policy')) {
+        update_option('wp_page_for_privacy_policy', $ids['privacy']);
+    }
+    add_option('theme_legal_pages', $ids);
+};
+add_action('after_switch_theme', $legalPages);
+add_action('admin_init', $legalPages);
+
 add_action('init', function () {
     register_nav_menus(['header_navigation' => esc_html__('Header navigation', 'contabai-theme')]);
 });

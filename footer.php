@@ -1,15 +1,11 @@
 <?php use ContabaiTheme\Heroicon; ?>
 </main>
 <?php
-$privacy = (string) get_option('theme_privacy', '');
-$terms   = (string) get_option('theme_terms', '');
-
-$legalBody = '';
-if ($privacy !== '') {
-    $legalBody .= '<div x-show="doc === \'privacy\'" class="entry-content">' . wp_kses_post($privacy) . '</div>';
-}
-if ($terms !== '') {
-    $legalBody .= '<div x-show="doc === \'terms\'" class="entry-content">' . wp_kses_post($terms) . '</div>';
+$legalLinks = [];
+foreach ((array) get_option('theme_legal_pages', []) as $slug => $pageId) {
+    if (get_post_status($pageId) === 'publish') {
+        $legalLinks[] = ['url' => get_permalink($pageId), 'label' => $slug === 'privacy' ? __('Privacy', 'contabai-theme') : __('Terms', 'contabai-theme')];
+    }
 }
 
 $socialDefs = [
@@ -28,19 +24,15 @@ foreach ($socialDefs as $def) {
     }
 }
 ?>
-<footer class="mt-16 border-t border-neutral-200 bg-white" x-data="{ legal: false, doc: '' }" x-on:keydown.escape.window="legal = false">
+<footer class="mt-16 border-t border-neutral-200 bg-white">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-sm text-neutral-500 sm:flex-row">
         <div class="flex flex-col items-center gap-1 md:items-start">
             <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
                 <span>&copy; <?php echo esc_html(date('Y')); ?> <?php echo esc_html(get_bloginfo('name')); ?></span>
-                <?php if ($privacy !== '') : ?>
+                <?php foreach ($legalLinks as $link) : ?>
                     <span aria-hidden="true" class="text-neutral-300">&middot;</span>
-                    <button type="button" x-on:click="doc = 'privacy'; legal = true" class="contabai-link text-neutral-500 transition hover:text-neutral-900"><?php esc_html_e('Privacy', 'contabai-theme'); ?></button>
-                <?php endif; ?>
-                <?php if ($terms !== '') : ?>
-                    <span aria-hidden="true" class="text-neutral-300">&middot;</span>
-                    <button type="button" x-on:click="doc = 'terms'; legal = true" class="contabai-link text-neutral-500 transition hover:text-neutral-900"><?php esc_html_e('Terms', 'contabai-theme'); ?></button>
-                <?php endif; ?>
+                    <a href="<?php echo esc_url($link['url']); ?>" class="contabai-link text-neutral-500 transition hover:text-neutral-900"><?php echo esc_html($link['label']); ?></a>
+                <?php endforeach; ?>
             </div>
             <a href="https://www.contabai.network" target="_blank" rel="noopener noreferrer" class="text-xs text-neutral-400 contabai-link transition-colors hover:text-neutral-600"><?php esc_html_e('Powered by Contabai', 'contabai-theme'); ?></a>
         </div>
@@ -56,16 +48,6 @@ foreach ($socialDefs as $def) {
             </div>
         <?php endif; ?>
     </div>
-
-    <?php
-    if ($legalBody !== '') {
-        get_template_part('template-parts/modal', null, [
-            'state' => 'legal',
-            'title' => "doc === 'privacy' ? '" . esc_js(__('Privacy policy', 'contabai-theme')) . "' : '" . esc_js(__('Terms of service', 'contabai-theme')) . "'",
-            'body'  => $legalBody,
-        ]);
-    }
-    ?>
 </footer>
 
 <?php wp_footer(); ?>

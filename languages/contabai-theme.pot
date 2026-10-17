@@ -228,9 +228,6 @@ msgstr ""
 msgid "Fairer prices"
 msgstr ""
 
-msgid "Footer"
-msgstr ""
-
 msgid "From snug studios to grand villas — room for couples, families and groups."
 msgstr ""
 
@@ -417,9 +414,6 @@ msgstr ""
 msgid "Privacy policy"
 msgstr ""
 
-msgid "Privacy statement"
-msgstr ""
-
 msgid "Radial"
 msgstr ""
 
@@ -517,9 +511,6 @@ msgid "Terms"
 msgstr ""
 
 msgid "Terms of service"
-msgstr ""
-
-msgid "Terms statement"
 msgstr ""
 
 msgid "Text alignment"

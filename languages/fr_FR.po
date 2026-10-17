@@ -253,9 +253,6 @@ msgstr "Facebook"
 msgid "Fairer prices"
 msgstr "Des prix plus justes"
 
-msgid "Footer"
-msgstr "Pied de page"
-
 msgid ""
 "From snug studios to grand villas — room for couples, families and groups."
 msgstr ""
@@ -449,9 +446,6 @@ msgstr "Confidentialité"
 msgid "Privacy policy"
 msgstr "Politique de confidentialité"
 
-msgid "Privacy statement"
-msgstr "Déclaration de confidentialité"
-
 msgid "Radial"
 msgstr "Radial"
 
@@ -553,9 +547,6 @@ msgid "Terms"
 msgstr "Conditions"
 
 msgid "Terms of service"
-msgstr "Conditions d'utilisation"
-
-msgid "Terms statement"
 msgstr "Conditions d'utilisation"
 
 msgid "Text alignment"

@@ -124,7 +124,6 @@ class ThemeSettings
             'topbar' => __('Top bar', 'contabai-theme'),
             'typography' => __('Typography', 'contabai-theme'),
             'background' => __('Background', 'contabai-theme'),
-            'footer' => __('Footer', 'contabai-theme'),
             'socials' => __('Socials', 'contabai-theme'),
             'updates' => __('Updates', 'contabai-theme'),
             'advanced' => __('Advanced', 'contabai-theme'),
@@ -190,9 +189,6 @@ class ThemeSettings
             ['theme_bg_size', __('Size', 'contabai-theme'), 'bg_size', 'cover', 'background'],
             ['theme_bg_position', __('Position', 'contabai-theme'), 'bg_position', 'center center', 'background'],
             ['theme_content_opacity', __('Content opacity', 'contabai-theme'), 'content_opacity', '100', 'background'],
-
-            ['theme_privacy', __('Privacy statement', 'contabai-theme'), 'html', '', 'footer'],
-            ['theme_terms', __('Terms statement', 'contabai-theme'), 'html', '', 'footer'],
 
             ['theme_social_facebook', __('Facebook', 'contabai-theme'), 'url', '', 'socials'],
             ['theme_social_x', __('X', 'contabai-theme'), 'url', '', 'socials'],
