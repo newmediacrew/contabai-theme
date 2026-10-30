@@ -8,8 +8,9 @@ $heroEyebrow = (string) ($args['eyebrow'] ?? '');
 $heroSub     = (string) ($args['subtitle'] ?? '');
 $heroCrumbs  = (string) ($args['crumbs'] ?? '');
 $heroSize    = ($args['size'] ?? '') === 'xl' ? ' is-xl' : '';
+$heroCompact = ! empty($args['compact']) ? ' is-compact' : '';
 ?>
-<section class="contabai-photo-hero">
+<section class="contabai-photo-hero<?php echo $heroCompact; ?>">
     <?php if ($heroImage !== '') : ?>
         <img src="<?php echo esc_url($heroImage); ?>" alt="<?php echo esc_attr($heroAlt); ?>" fetchpriority="high" decoding="async" class="contabai-photo-hero-img" />
     <?php endif; ?>

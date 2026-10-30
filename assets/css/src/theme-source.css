@@ -44,7 +44,6 @@
 .contabai-header.is-scrolled nav { min-height: 3.25rem; padding-block: 0.25rem; }
 .contabai-header.is-scrolled .header-logo { max-height: min(var(--logo-height, 40px), 36px); }
 .contabai-header.is-scrolled .header-logo-mark { height: min(var(--logo-height, 40px), 36px); }
-.contabai-header.is-scrolled { box-shadow: 0 6px 20px -14px rgba(15, 23, 42, 0.4); }
 @media (prefers-reduced-motion: reduce) {
     .contabai-header nav, .contabai-header .header-logo { transition: none; }
 }
@@ -111,7 +110,7 @@
 @keyframes cb-cue { 0%, 100% { transform: translate(-50%, 0); opacity: .5; } 50% { transform: translate(-50%, 8px); opacity: 1; } }
 @media (max-height: 700px) { .contabai-hero-cue { display: none; } }
 @media (min-width: 640px) {
-    .contabai-hero-search .contabai-search-bar { border-radius: 9999px; border-color: rgba(255, 255, 255, .35); background: rgba(255, 255, 255, .14); backdrop-filter: blur(16px); box-shadow: 0 20px 60px rgba(0, 0, 0, .25); }
+    .contabai-hero-search .contabai-search-bar { border-radius: 9999px; border-color: rgba(255, 255, 255, .35); background: rgba(255, 255, 255, .14); backdrop-filter: blur(16px); }
     .contabai-hero-search .contabai-search-bar > button { border-radius: 9999px; }
     .contabai-hero-search .contabai-search-bar > button:hover,
     .contabai-hero-search .contabai-search-bar > button.bg-neutral-50 { background: rgba(255, 255, 255, .12); }
@@ -138,18 +137,20 @@
 .contabai-photo-hero nav[aria-label="breadcrumb"] a:hover { color: #fff; }
 .contabai-photo-hero-title { margin: 0; max-width: 22ch; font-family: var(--theme-heading-font, var(--theme-font)), system-ui, sans-serif; font-size: clamp(2.4rem, 6vw, 4.75rem); font-weight: var(--heading-weight, 700); line-height: 1.02; color: #fff; text-wrap: balance; text-shadow: 0 2px 30px rgba(0, 0, 0, .3); }
 .contabai-photo-hero-title.is-xl { max-width: none; font-size: clamp(3rem, 9vw, 6.5rem); line-height: .95; }
+.contabai-photo-hero.is-compact { min-height: clamp(340px, 52vh, 520px); }
+.contabai-photo-hero.is-compact .contabai-photo-hero-title.is-xl { font-size: clamp(2.75rem, 7vw, 5.75rem); }
 .contabai-photo-hero-eyebrow { margin: 0 0 .75rem; font-size: .8rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--hero-eyebrow-color, #ffd9c9); text-shadow: 0 1px 2px rgba(0, 0, 0, .5); }
 .contabai-photo-hero-sub { margin-top: 1rem; max-width: 46rem; color: #f3ece4; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.55; text-shadow: 0 1px 2px rgba(0, 0, 0, .55), 0 2px 18px rgba(0, 0, 0, .45); }
 .contabai-photo-body > div:first-child:has(.contabai-search-bar) { position: relative; margin-top: -5.5rem; padding-top: 0; }
 @media (min-width: 640px) {
-    .contabai-photo-body .contabai-search-bar { border-radius: 9999px; border-color: transparent; box-shadow: 0 24px 60px rgba(60, 40, 20, .16); }
+    .contabai-photo-body .contabai-search-bar { border-radius: 9999px; border-color: transparent; }
     .contabai-photo-body .contabai-search-bar > button { border-radius: 9999px; }
     .contabai-photo-body .contabai-search-submit { border-radius: 9999px; }
 .contabai-hero-search .contabai-search-bar > button:first-child,
 .contabai-photo-body .contabai-search-bar > button:first-child { padding-left: 1.75rem; }
 }
 @media (prefers-reduced-motion: reduce) { .contabai-photo-hero-img { animation: none; } }
-.contabai-header-overlay { margin-bottom: calc(-1 * var(--contabai-header-h, 78px)); transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.contabai-header-overlay { margin-bottom: calc(-1 * var(--contabai-header-h, 78px)); transition: background-color .25s ease, border-color .25s ease; }
 .contabai-header-overlay:not(.is-scrolled) { background: transparent; border-color: transparent; backdrop-filter: none; }
 .contabai-header-overlay:not(.is-scrolled) .desktop-nav > ul > .menu-item > a,
 .contabai-header-overlay:not(.is-scrolled) .contabai-header-brand,
@@ -161,6 +162,7 @@
 .contabai-header-overlay ~ main .contabai-hero { min-height: max(640px, calc(100svh - 2.5rem)); }
 .contabai-header-overlay ~ main .contabai-hero-inner { padding-top: calc(5rem + var(--contabai-header-h, 78px)); }
 .contabai-header-overlay ~ main .contabai-photo-hero { min-height: clamp(480px, 70vh, 720px); }
+.contabai-header-overlay ~ main .contabai-photo-hero.is-compact { min-height: clamp(380px, 56vh, 540px); }
 .contabai-header-overlay ~ main .contabai-photo-hero-inner { padding-top: calc(2rem + var(--contabai-header-h, 78px)); }
 
 .entry-content { font-size: var(--content-font-size, 16px); }

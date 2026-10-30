@@ -18,9 +18,12 @@ if ($overlay) {
         <?php the_content(); ?>
     <?php else : ?>
         <?php
+        $placeTitle = method_exists('Contabai\\Controllers\\ShortCodes', 'place_title') ? \Contabai\Controllers\ShortCodes::place_title() : null;
         get_template_part('template-parts/photo-hero', null, [
-            'image' => \ContabaiTheme\PhotoHero::image(get_the_ID()),
-            'title' => get_the_title(),
+            'image'   => \ContabaiTheme\PhotoHero::image(get_the_ID()),
+            'title'   => $placeTitle ?? get_the_title(),
+            'crumbs'  => $placeTitle !== null ? \Contabai\View::render('components.breadcrumb', ['crumbs' => [['label' => __('Home', 'contabai-theme'), 'url' => home_url('/')], ['label' => $placeTitle, 'url' => null]]]) : '',
+            'compact' => true,
         ]);
         ?>
         <div class="contabai-photo-body"><?php the_content(); ?></div>

@@ -27,7 +27,7 @@ $islands = [
                 ? 'col-span-2 aspect-[16/10] lg:col-span-1 lg:row-span-2 lg:aspect-auto lg:h-full'
                 : 'col-span-1 aspect-[4/3] lg:aspect-auto lg:h-full';
         ?>
-            <a href="<?php echo esc_url($url); ?>" class="group relative block overflow-hidden rounded-3xl shadow-sm ring-1 ring-neutral-200 transition hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--theme-color,#ff5400)] <?php echo $cardClass; ?>">
+            <a href="<?php echo esc_url($url); ?>" class="group relative block overflow-hidden rounded-3xl ring-1 ring-neutral-200 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--theme-color,#ff5400)] <?php echo $cardClass; ?>">
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/islands/' . $island['img']); ?>" alt="<?php echo esc_attr($island['name']); ?>" width="1200" height="900" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105" />
                 <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
                 <div class="absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 p-4 sm:p-5">

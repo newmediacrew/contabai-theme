@@ -25,6 +25,7 @@ get_header();
         'subtitle' => (! $generated && has_excerpt()) ? get_the_excerpt() : '',
         'crumbs'   => \Contabai\View::render('components.breadcrumb', ['crumbs' => $crumbs]),
         'size'     => 'xl',
+        'compact'  => true,
     ]);
     ?>
     <div class="contabai-photo-body"><?php the_content(); ?></div>
