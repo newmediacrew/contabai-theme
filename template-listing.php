@@ -2,7 +2,8 @@
 /* Template Name: Listing (no breadcrumb) */
 
 $isListingDetail = (bool) get_query_var('contabai_listing_id');
-$overlay = ! $isListingDetail;
+$resultsMap = ! $isListingDetail && defined('CONTABAI_MAP_TILES_URL') && (int) get_option('contabai_map_enabled', 1) === 1;
+$overlay = ! $isListingDetail && ! $resultsMap;
 if ($isListingDetail && class_exists('Contabai\\Controllers\\ListingController')) {
     [$listingData] = \Contabai\Controllers\ListingController::get((int) get_query_var('contabai_listing_id'));
     $listingForHeader = $listingData['data']['listing'] ?? null;
@@ -14,7 +15,7 @@ if ($overlay) {
 ?>
 <?php get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
-    <?php if ($isListingDetail) : ?>
+    <?php if ($isListingDetail || $resultsMap) : ?>
         <?php the_content(); ?>
     <?php else : ?>
         <?php
