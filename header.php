@@ -77,7 +77,8 @@ if (get_option('theme_topbar_enabled', '0') === '1') {
                 <img src="<?php echo esc_url($brandLogo); ?>" alt="<?php echo esc_attr($brandName); ?>" class="header-logo block w-auto shrink-0 object-contain">
             <?php else : ?>
                 <svg viewBox="0 0 48 48" fill="none" class="header-logo-mark block shrink-0" role="img" aria-label="<?php echo esc_attr($brandName); ?>">
-                    <path d="M10 37V14l14 12 14-12v23" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 40V18C9 9 20 8.5 24 21C28 8.5 39 9 39 18V40" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="24" cy="33" r="4" fill="currentColor"/>
                 </svg>
             <?php endif; ?>
             <?php if ($brandShowText) : ?>
@@ -125,7 +126,7 @@ if (get_option('theme_topbar_enabled', '0') === '1') {
                 <span class="hidden sm:inline"><?php esc_html_e('My hub', 'contabai-theme'); ?></span>
             </a>
 
-            <?php get_template_part('template-parts/mobile-menu'); ?>
+            <?php get_template_part('template-parts/mobile-menu', null, ['ctaShow' => $ctaShow, 'ctaLabel' => $ctaLabel, 'ctaUrl' => $ctaUrl, 'accountUrl' => $accountUrl]); ?>
         </div>
     </nav>
 </header>
@@ -144,27 +145,5 @@ if (get_option('theme_topbar_enabled', '0') === '1') {
 })();
 </script>
 <?php endif; ?>
-
-<script>
-// Runs after Alpine finishes (incl. x-teleport), so #mobile-menu exists in its teleported spot.
-document.addEventListener('alpine:initialized', function () {
-    let mobileMenu = document.getElementById('mobile-menu');
-    if (!mobileMenu) return;
-    let parents = mobileMenu.querySelectorAll('.menu-item-has-children');
-    parents.forEach(function (parent) {
-        let subMenu = parent.querySelector('.sub-menu');
-        if (!subMenu) return;
-        subMenu.style.display = 'none';
-        let link = parent.querySelector(':scope > a');
-        link.setAttribute('aria-expanded', 'false');
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            let open = subMenu.style.display === 'none';
-            subMenu.style.display = open ? '' : 'none';
-            link.setAttribute('aria-expanded', open ? 'true' : 'false');
-        });
-    });
-});
-</script>
 
 <main class="min-h-[60vh]">

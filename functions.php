@@ -54,7 +54,7 @@ add_action('init', function () {
 });
 
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('contabai-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '72');
+    wp_enqueue_style('contabai-theme-css', get_template_directory_uri() . '/assets/css/theme.css', [], '73');
 });
 
 add_action('wp_head', function () {
@@ -63,7 +63,7 @@ add_action('wp_head', function () {
     }
     $img = get_template_directory_uri() . '/assets/img';
     $accent = sanitize_hex_color((string) get_option('theme_color_schema', '#ff5400')) ?: '#ff5400';
-    $svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none"><path d="M10 37V14l14 12 14-12v23" stroke="' . $accent . '" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    $svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none"><path d="M9 40V18C9 9 20 8.5 24 21C28 8.5 39 9 39 18V40" stroke="' . $accent . '" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="33" r="4.5" fill="' . $accent . '"/></svg>';
     echo '<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,' . rawurlencode($svg) . '">';
     echo '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url($img . '/favicon-32.png') . '">';
     echo '<link rel="icon" type="image/png" sizes="16x16" href="' . esc_url($img . '/favicon-16.png') . '">';
