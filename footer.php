@@ -2,9 +2,10 @@
 </main>
 <?php
 $legalLinks = [];
-foreach ((array) get_option('theme_legal_pages', []) as $slug => $pageId) {
-    if (get_post_status($pageId) === 'publish') {
-        $legalLinks[] = ['url' => get_permalink($pageId), 'label' => $slug === 'privacy' ? __('Privacy', 'contabai-theme') : __('Terms', 'contabai-theme')];
+foreach (['privacy' => __('Privacy', 'contabai-theme'), 'terms' => __('Terms', 'contabai-theme')] as $legalKey => $legalLabel) {
+    $legalPage = get_page_by_path(sanitize_title((string) get_option('theme_' . $legalKey . '_page_slug', $legalKey)));
+    if ($legalPage && $legalPage->post_status === 'publish') {
+        $legalLinks[] = ['url' => get_permalink($legalPage), 'label' => $legalLabel];
     }
 }
 

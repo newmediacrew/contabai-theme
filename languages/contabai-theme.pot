@@ -411,6 +411,9 @@ msgstr ""
 msgid "Privacy"
 msgstr ""
 
+msgid "Privacy page slug"
+msgstr ""
+
 msgid "Privacy policy"
 msgstr ""
 
@@ -511,6 +514,9 @@ msgid "Terms"
 msgstr ""
 
 msgid "Terms of service"
+msgstr ""
+
+msgid "Terms page slug"
 msgstr ""
 
 msgid "Text alignment"

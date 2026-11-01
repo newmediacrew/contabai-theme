@@ -31,10 +31,11 @@ $legalPages = function () {
     ];
     $ids = [];
     foreach ($pages as $slug => [$title, $content]) {
-        $page = get_page_by_path($slug);
+        $pageSlug = sanitize_title((string) get_option('theme_' . $slug . '_page_slug', $slug));
+        $page = get_page_by_path($pageSlug);
         $ids[$slug] = $page ? $page->ID : wp_insert_post([
             'post_type'    => 'page',
-            'post_name'    => $slug,
+            'post_name'    => $pageSlug,
             'post_title'   => $title,
             'post_content' => $content,
             'post_status'  => $content !== '' ? 'publish' : 'draft',

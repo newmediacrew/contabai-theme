@@ -197,6 +197,8 @@ class ThemeSettings
             ['theme_social_youtube', __('YouTube', 'contabai-theme'), 'url', '', 'socials'],
             ['theme_social_tiktok', __('TikTok', 'contabai-theme'), 'url', '', 'socials'],
 
+            ['theme_privacy_page_slug', __('Privacy page slug', 'contabai-theme'), 'text', 'privacy', 'advanced'],
+            ['theme_terms_page_slug', __('Terms page slug', 'contabai-theme'), 'text', 'terms', 'advanced'],
             ['theme_classic_editor', __('Classic editor', 'contabai-theme'), 'checkbox', '0', 'advanced'],
             ['theme_dev_mode', __('Development mode', 'contabai-theme'), 'checkbox', '0', 'advanced', __('Switches off theme updates from GitHub. Turn ON for a local development site that is a git checkout. Leave OFF in production.', 'contabai-theme')],
         ];
@@ -294,6 +296,8 @@ class ThemeSettings
                 $callback = [$this, 'sanitize_site_name'];
             } elseif ($key === 'theme_payoff') {
                 $callback = [$this, 'sanitize_payoff'];
+            } elseif ($key === 'theme_privacy_page_slug' || $key === 'theme_terms_page_slug') {
+                $callback = 'sanitize_title';
             }
 
             register_setting('contabai_theme_' . $tab, $key, [
@@ -737,41 +741,41 @@ class ThemeSettings
 
     public function add_theme_styles(): void
     {
-        $color = esc_attr(get_option('theme_color_schema', '#ff5400'));
+        $color = (string) sanitize_hex_color((string) get_option('theme_color_schema', '#ff5400'));
         $contentOpacity = (int) get_option('theme_content_opacity', '100');
         if ($contentOpacity < 10 || $contentOpacity > 100) {
             $contentOpacity = 100;
         }
-        $font = esc_attr(get_option('theme_font_schema', 'Inter'));
-        $topbarBg = esc_attr(get_option('theme_topbar_bg', '#1f2d3d')) ?: '#1f2d3d';
-        $topbarText = esc_attr(get_option('theme_topbar_text', '#ffffff')) ?: '#ffffff';
-        $topbarIcon1 = esc_attr(get_option('theme_topbar_col1_icon_color', '#22c55e')) ?: '#22c55e';
-        $topbarIcon2 = esc_attr(get_option('theme_topbar_col2_icon_color', '#22c55e')) ?: '#22c55e';
-        $topbarIcon3 = esc_attr(get_option('theme_topbar_col3_icon_color', '#22c55e')) ?: '#22c55e';
-        $topbarIcon4 = esc_attr(get_option('theme_topbar_col4_icon_color', '#22c55e')) ?: '#22c55e';
-        $heroEyebrowColor = esc_attr(get_option('theme_hero_eyebrow_color', '#ffd9c9')) ?: '#ffd9c9';
-        $heroHeadingColor = esc_attr(get_option('theme_hero_heading_color', '#ffffff')) ?: '#ffffff';
-        $heroSubColor = esc_attr(get_option('theme_hero_subheading_color', '#e7ecef')) ?: '#e7ecef';
-        $overlayColor = esc_attr(get_option('theme_hero_overlay_color', '#0f171e')) ?: '#0f171e';
+        $font = $this->sanitize_font((string) get_option('theme_font_schema', 'Inter'));
+        $topbarBg = sanitize_hex_color((string) get_option('theme_topbar_bg', '#1f2d3d')) ?: '#1f2d3d';
+        $topbarText = sanitize_hex_color((string) get_option('theme_topbar_text', '#ffffff')) ?: '#ffffff';
+        $topbarIcon1 = sanitize_hex_color((string) get_option('theme_topbar_col1_icon_color', '#22c55e')) ?: '#22c55e';
+        $topbarIcon2 = sanitize_hex_color((string) get_option('theme_topbar_col2_icon_color', '#22c55e')) ?: '#22c55e';
+        $topbarIcon3 = sanitize_hex_color((string) get_option('theme_topbar_col3_icon_color', '#22c55e')) ?: '#22c55e';
+        $topbarIcon4 = sanitize_hex_color((string) get_option('theme_topbar_col4_icon_color', '#22c55e')) ?: '#22c55e';
+        $heroEyebrowColor = sanitize_hex_color((string) get_option('theme_hero_eyebrow_color', '#ffd9c9')) ?: '#ffd9c9';
+        $heroHeadingColor = sanitize_hex_color((string) get_option('theme_hero_heading_color', '#ffffff')) ?: '#ffffff';
+        $heroSubColor = sanitize_hex_color((string) get_option('theme_hero_subheading_color', '#e7ecef')) ?: '#e7ecef';
+        $overlayColor = sanitize_hex_color((string) get_option('theme_hero_overlay_color', '#0f171e')) ?: '#0f171e';
         $overlayOpacity = (int) get_option('theme_hero_overlay_opacity', '30');
         if ($overlayOpacity < 0 || $overlayOpacity > 100) {
             $overlayOpacity = 30;
         }
         $overlayOpacity = $overlayOpacity / 100;
-        $heroBadge1 = esc_attr(get_option('theme_hero_badge1_icon_color', '#22c55e')) ?: '#22c55e';
-        $heroBadge2 = esc_attr(get_option('theme_hero_badge2_icon_color', '#22c55e')) ?: '#22c55e';
-        $heroBadge3 = esc_attr(get_option('theme_hero_badge3_icon_color', '#22c55e')) ?: '#22c55e';
+        $heroBadge1 = sanitize_hex_color((string) get_option('theme_hero_badge1_icon_color', '#22c55e')) ?: '#22c55e';
+        $heroBadge2 = sanitize_hex_color((string) get_option('theme_hero_badge2_icon_color', '#22c55e')) ?: '#22c55e';
+        $heroBadge3 = sanitize_hex_color((string) get_option('theme_hero_badge3_icon_color', '#22c55e')) ?: '#22c55e';
 
         $logoHeight = (int) get_option('theme_logo_height', 40);
         if ($logoHeight < 16 || $logoHeight > 80) {
             $logoHeight = 40;
         }
 
-        $headingFont = esc_attr(get_option('theme_heading_font', 'Inter')) ?: 'Inter';
-        $bodyTextColor = esc_attr(get_option('theme_body_text_color', '#374151')) ?: '#374151';
-        $headingColor = esc_attr(get_option('theme_heading_color', '#111827')) ?: '#111827';
-        $linkColor = esc_attr(get_option('theme_link_color', '#ff5400')) ?: '#ff5400';
-        $eyebrowColor = esc_attr(get_option('theme_eyebrow_color', '#8f5320')) ?: '#8f5320';
+        $headingFont = $this->sanitize_font((string) get_option('theme_heading_font', 'Inter')) ?: 'Inter';
+        $bodyTextColor = sanitize_hex_color((string) get_option('theme_body_text_color', '#374151')) ?: '#374151';
+        $headingColor = sanitize_hex_color((string) get_option('theme_heading_color', '#111827')) ?: '#111827';
+        $linkColor = sanitize_hex_color((string) get_option('theme_link_color', '#ff5400')) ?: '#ff5400';
+        $eyebrowColor = sanitize_hex_color((string) get_option('theme_eyebrow_color', '#8f5320')) ?: '#8f5320';
 
         $baseFontSize = (string) get_option('theme_base_font_size', '16');
         if (! in_array($baseFontSize, ['14', '15', '16', '17', '18'], true)) {
@@ -821,7 +825,7 @@ class ThemeSettings
             echo '<style id="contabai-fonts">' . $fontFaces . '</style>';
         }
         $bgType = get_option('theme_bg_type', 'color');
-        $bgColor = esc_attr(get_option('theme_bg_color', '#f3f4f6'));
+        $bgColor = (string) sanitize_hex_color((string) get_option('theme_bg_color', '#f3f4f6'));
 
         if ($bgType === 'gradient') {
             $bgPreset = get_option('theme_bg_gradient', '1');

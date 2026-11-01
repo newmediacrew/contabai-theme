@@ -451,6 +451,9 @@ msgstr "Vorige"
 msgid "Privacy"
 msgstr "Privacy"
 
+msgid "Privacy page slug"
+msgstr "Slug van de privacypagina"
+
 msgid "Privacy policy"
 msgstr "Privacybeleid"
 
@@ -561,6 +564,9 @@ msgstr "Voorwaarden"
 
 msgid "Terms of service"
 msgstr "Servicevoorwaarden"
+
+msgid "Terms page slug"
+msgstr "Slug van de voorwaardenpagina"
 
 msgid "Text alignment"
 msgstr "Tekstuitlijning"

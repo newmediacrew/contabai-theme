@@ -451,6 +451,9 @@ msgstr "Anterior"
 msgid "Privacy"
 msgstr "Privacidad"
 
+msgid "Privacy page slug"
+msgstr "Slug de la página de privacidad"
+
 msgid "Privacy policy"
 msgstr "Política de privacidad"
 
@@ -560,6 +563,9 @@ msgstr "Términos"
 
 msgid "Terms of service"
 msgstr "Términos del servicio"
+
+msgid "Terms page slug"
+msgstr "Slug de la página de términos"
 
 msgid "Text alignment"
 msgstr "Alineación del texto"
