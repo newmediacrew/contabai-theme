@@ -144,6 +144,7 @@ class ThemeSettings
             ['theme_breadcrumbs_enabled', __('Breadcrumbs', 'contabai-theme'), 'checkbox', '1', 'branding'],
 
             ['theme_hero_enabled', __('Show hero on homepage', 'contabai-theme'), 'checkbox', '1', 'hero'],
+            ['theme_hero_listing_photos', __('Use listing cover photos', 'contabai-theme'), 'checkbox', '1', 'hero', __('Shows the cover photos of random listings in the hero instead of the stock photos.', 'contabai-theme')],
             ['theme_hero_eyebrow', __('Eyebrow', 'contabai-theme'), 'text', 'Direct-booking holiday rentals', 'hero'],
             ['theme_hero_eyebrow_color', __('Eyebrow color', 'contabai-theme'), 'color', '#ffd9c9', 'hero'],
             ['theme_hero_heading', __('Heading', 'contabai-theme'), 'text', 'Your place in the sun, booked direct.', 'hero'],

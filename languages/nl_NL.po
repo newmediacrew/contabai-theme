@@ -517,6 +517,9 @@ msgstr "Toont %1$s tot %2$s van %3$s resultaten"
 msgid "Shown in a pop-up from the footer link."
 msgstr "Wordt in een pop-up getoond via de link in de voettekst."
 
+msgid "Shows the cover photos of random listings in the hero instead of the stock photos."
+msgstr "Toont de omslagfoto's van willekeurige accommodaties in de hero in plaats van de stockfoto's."
+
 msgid "Simple by design"
 msgstr "Simpel met opzet"
 
@@ -620,6 +623,9 @@ msgstr "Type"
 
 msgid "Typography"
 msgstr "Typografie"
+
+msgid "Use listing cover photos"
+msgstr "Omslagfoto's van accommodaties gebruiken"
 
 msgid ""
 "We are starting close to home, in the Dutch Caribbean — and rolling out "

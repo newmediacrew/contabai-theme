@@ -517,6 +517,9 @@ msgstr "Mostrando %1$s a %2$s de %3$s resultados"
 msgid "Shown in a pop-up from the footer link."
 msgstr "Se muestra en una ventana emergente desde el enlace del pie de página."
 
+msgid "Shows the cover photos of random listings in the hero instead of the stock photos."
+msgstr "Muestra en el hero las fotos de portada de alojamientos aleatorios en lugar de las fotos de stock."
+
 msgid "Simple by design"
 msgstr "Sencillo por diseño"
 
@@ -617,6 +620,9 @@ msgstr "Tipo"
 
 msgid "Typography"
 msgstr "Tipografía"
+
+msgid "Use listing cover photos"
+msgstr "Usar las fotos de portada de los alojamientos"
 
 msgid ""
 "We are starting close to home, in the Dutch Caribbean — and rolling out "

@@ -471,6 +471,9 @@ msgstr ""
 msgid "Shown in a pop-up from the footer link."
 msgstr ""
 
+msgid "Shows the cover photos of random listings in the hero instead of the stock photos."
+msgstr ""
+
 msgid "Simple by design"
 msgstr ""
 
@@ -562,6 +565,9 @@ msgid "Type"
 msgstr ""
 
 msgid "Typography"
+msgstr ""
+
+msgid "Use listing cover photos"
 msgstr ""
 
 msgid "We are starting close to home, in the Dutch Caribbean — and rolling out worldwide from there."

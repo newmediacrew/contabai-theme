@@ -21,12 +21,23 @@ for ($i = 1; $i <= 3; $i++) {
 }
 
 $heroImages = [];
-$files = glob(get_theme_file_path('assets/img/hero/holiday-*.webp')) ?: [];
-if ($files !== []) {
-    shuffle($files);
-    foreach (array_slice($files, 0, 3) as $file) {
-        $heroImages[] = get_theme_file_uri('assets/img/hero/' . basename($file));
+if (get_option('theme_hero_listing_photos', '1') === '1' && class_exists('Contabai\\Controllers\\ListingController')) {
+    $scope = \Contabai\Controllers\ListingController::hostScope();
+    if ($scope['mode'] !== 'empty') {
+        $query = ['count' => 3] + ($scope['mode'] === 'host' ? ['host' => $scope['host']] : []);
+        [$randomBody] = \Contabai\Helper::api('GET', '/sanctum/listings/random?' . http_build_query($query));
+        foreach ((array) ($randomBody['data']['listings'] ?? []) as $listing) {
+            if (! empty($listing['photos'][0]['hero'])) {
+                $heroImages[] = $listing['photos'][0]['hero'];
+            }
+        }
     }
+}
+
+$files = glob(get_theme_file_path('assets/img/hero/holiday-*.webp')) ?: [];
+shuffle($files);
+foreach (array_slice($files, 0, 3 - count($heroImages)) as $file) {
+    $heroImages[] = get_theme_file_uri('assets/img/hero/' . basename($file));
 }
 
 $heroAlign = get_option('theme_hero_align', 'center');
