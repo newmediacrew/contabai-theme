@@ -14,11 +14,11 @@ Public site shell for the Contabai property-listings platform: header, top bar, 
 
 1. Download `contabai-theme.zip` from the latest [release](https://github.com/newmediacrew/contabai-theme/releases/latest).
 2. In wp-admin: **Appearance → Themes → Add New → Upload Theme**, choose the zip, install and activate.
-3. Go to **Contabai Theme** in the admin menu to set branding, hero, top bar, fonts, background, footer and socials.
+3. Go to **Contabai Theme** in the admin menu to set branding, hero, top bar, fonts, background and socials.
 
 ## Settings
 
-Branding · Hero · Top bar · Typography · Background · Footer · Socials · Updates · Advanced
+Branding · Hero · Top bar · Typography · Background · Socials · Updates · Advanced
 
 Fonts are self-hosted: no requests to Google.
 
