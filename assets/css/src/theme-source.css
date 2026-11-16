@@ -48,7 +48,6 @@
     .contabai-header nav, .contabai-header .header-logo { transition: none; }
 }
 
-/* homepage hero / jumbotron */
 .contabai-hero { position: relative; min-height: max(640px, calc(100svh - 6.5rem)); display: flex; align-items: center; }
 .contabai-hero-bgs { position: absolute; inset: 0; overflow: hidden; background: #16232E; }
 .contabai-hero-bgs::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15, 23, 30, .45) 0%, rgba(15, 23, 30, 0) 30%, rgba(15, 23, 30, .1) 55%, rgba(15, 23, 30, .7) 100%); }

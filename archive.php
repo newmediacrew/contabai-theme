@@ -34,7 +34,7 @@ get_template_part('template-parts/photo-hero', null, [
                        class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white no-underline transition">
                         <?php if (has_post_thumbnail()) : ?>
                             <div class="aspect-[16/10] overflow-hidden bg-neutral-100">
-                                <?php the_post_thumbnail('medium', ['class' => 'h-full w-full object-cover transition duration-300 group-hover:scale-105 !rounded-none']); ?>
+                                <?php the_post_thumbnail('medium', ['class' => 'h-full w-full object-cover transition duration-300 group-hover:scale-105 rounded-none!']); ?>
                             </div>
                         <?php endif; ?>
                         <div class="flex flex-1 flex-col p-5">

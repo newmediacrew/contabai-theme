@@ -71,7 +71,6 @@ if (get_option('theme_topbar_enabled', '0') === '1') {
 <header class="contabai-header <?php echo $overlayHeader ? 'contabai-header-overlay ' : ''; ?><?php echo $stickyHeader ? 'sticky top-0 ' : ''; ?>z-30 border-b border-neutral-200 bg-white/90 backdrop-blur"
         x-data="{ scrolled: false }" x-on:scroll.window="scrolled = scrolled ? window.scrollY > 4 : window.scrollY > 40" x-bind:class="scrolled ? 'is-scrolled' : ''">
     <nav class="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-4 py-2">
-        <!-- Brand -->
         <a href="<?php echo esc_url(home_url()); ?>" class="flex min-w-0 items-center gap-2 no-underline">
             <?php if ($brandLogo !== '') : ?>
                 <img src="<?php echo esc_url($brandLogo); ?>" alt="<?php echo esc_attr($brandName); ?>" class="header-logo block w-auto shrink-0 object-contain">
@@ -88,7 +87,6 @@ if (get_option('theme_topbar_enabled', '0') === '1') {
             <?php endif; ?>
         </a>
 
-        <!-- Desktop nav -->
         <div class="desktop-nav hidden lg:block">
             <?php
             wp_nav_menu([
@@ -102,7 +100,6 @@ if (get_option('theme_topbar_enabled', '0') === '1') {
             ?>
         </div>
 
-        <!-- Auth button + mobile menu trigger -->
         <div class="flex shrink-0 items-center gap-2">
             <?php if ($isLoggedIn) : ?>
             <a href="<?php echo esc_url($chatUrl); ?>" title="<?php esc_attr_e('Chats', 'contabai-theme'); ?>" aria-label="<?php esc_attr_e('Chats', 'contabai-theme'); ?>"
